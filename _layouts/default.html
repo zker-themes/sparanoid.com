@@ -3,23 +3,23 @@
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 
 <title>{% if page.title != 'Sparanoid' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
-<link rel=alternate href=/feed/ type=application/atom+xml>
-<link rel=stylesheet href=/{{ site.css-path }}/a.css>
+<link rel=alternate href={{ site.base }}/feed/ type=application/atom+xml>
+<link rel=stylesheet href={{ site.base }}/{{ site.css-path }}/a.css>
 {% if page.title == 'Sparanoid' %}<link rel=dns-prefetch href={{ site.file }}>{% endif %}
 
-{% if page.permalink == '/work/' or page.category == 'work' %}<script src=/{{ site.css-path }}/a.min.js></script>{% endif %}
+{% if page.permalink == '/work/' or page.category == 'work' %}<script src={{ site.base }}/{{ site.css-path }}/a.min.js></script>{% endif %}
 
 <body>
 <header>
-  <h1><a href=/ rel=home accesskey=x>Sparanoid</a></h1>
+  <h1><a href={{ site.base }}/ rel=home accesskey=x>Sparanoid</a></h1>
 </header>
 
 <nav role=navigation>
   <ul>
-    <li><a href=/work/>Work</a></li>
-    <li><a href=/store/>Store</a></li>
-    <li><a href=/note/>Note</a></li>
-    <li><a href=/about/>About</a></li>
+    <li><a href={{ site.base }}/work/>Work</a></li>
+    <li><a href={{ site.base }}/store/>Store</a></li>
+    <li><a href={{ site.base }}/note/>Note</a></li>
+    <li><a href={{ site.base }}/about/>About</a></li>
   </ul>
 </nav>
 
@@ -28,11 +28,11 @@
 {% if page.category == 'note' %}
 <nav role=pagination>
 {% if page.next_in_categories.url %}
-  <a role=next href={{ page.next_in_categories.url }}/ title="{{ page.next_in_categories.title }}">Next</a>
+  <a role=next href={{ site.base }}{{ page.next_in_categories.url }}/ title="{{ page.next_in_categories.title }}">Next</a>
 {% else %}
 {% endif %}
 {% if page.previous_in_categories.url %}
-  <a role=previous href={{ page.previous_in_categories.url }}/ title="{{ page.previous_in_categories.title }}">Prev</a>
+  <a role=previous href={{ site.base }}{{ page.previous_in_categories.url }}/ title="{{ page.previous_in_categories.title }}">Prev</a>
 {% else %}
 {% endif %}
 </nav>
@@ -43,7 +43,7 @@
 {% for post in site.categories.work %}
   <li>
     <img src="{{ site.file }}/thumb/{% if post.thumb %}{{ post.thumb }}{% else %}na.png{% endif %}" alt="{{ post.title }}">
-    <a class=ajaxy href={{ post.url }}/>{{ post.title }}</a>
+    <a class=ajaxy href={{ site.base }}{{ post.url }}/>{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
@@ -57,7 +57,7 @@
 {% if page.title == 'Sparanoid' %}
 {% else %}
 <footer>
-  <p><a href=/>{{ site.name }}</a> / <a href=/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a></p>
+  <p><a href={{ site.base }}/>{{ site.name }}</a> / <a href={{ site.base }}/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a></p>
 </footer>
 {% endif %}
 

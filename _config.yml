@@ -35,10 +35,12 @@ server: ture
 server_port: 4321
 
 # exclude files for generated site
-exclude: 
+exclude:
 - README.md
 - LICENSE
 - Rakefile
 - sparanoid.com.tmproj
 - sparanoid.sublime-project
 - sparanoid.sublime-workspace
+
+base: /lab/version/19.1
