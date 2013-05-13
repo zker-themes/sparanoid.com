@@ -1,5 +1,5 @@
 <li>
-  <a href={{ post.url }}/>
+  <a href={{ site.base }}{{ post.url }}/>
     <img data-src="{{ site.file }}/thumb/{% if post.thumb %}{{ post.thumb }}{% else %}na.png{% endif %}" src=/_.gif alt="{{ post.title }}" onload=lzld(this) onerror=lzld(this)>
     <p>
       {{ post.title }}
