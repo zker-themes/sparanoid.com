@@ -197,7 +197,7 @@ article {
 		}
 			.al li img {
 				width: 180px;
-				height: 135px;
+				height: 180px;
 			}
 			.al li a {
 				position: absolute;
@@ -205,7 +205,7 @@ article {
 				left: 0;
 				padding: 10px;
 				width: 160px;
-				height: 115px;
+				height: 160px;
 				font-size: 12px;
 				opacity: 0;
 			}
