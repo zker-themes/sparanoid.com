@@ -23,8 +23,10 @@ server: ture
 server_port: 4321
 
 # exclude files for generated site
-exclude: 
+exclude:
 - README.md
 - LICENSE
 #- a.css
 - Rakefile
+
+base: /lab/version/14
