@@ -8,7 +8,7 @@ markdown:     rdiscount
 auto:         true
 server:       ture
 server_port:  4321
-exclude:      LICENSE, Rakefile, README.md
+# exclude:      LICENSE, Rakefile, README.md
 
 # custom settings
 url:          sparanoid.com
@@ -20,3 +20,4 @@ full-name:    Tunghiao Liu
 email:        info@sparanoid.com
 slogan:       I make things that don't suck.
 twitter:      sparanoid
+base:         /lab/version/19.3
