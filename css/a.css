@@ -204,7 +204,7 @@ article .download {
 dl {
 }
   dd {
-    
+
   }
     dt {
       margin: 20px 0 -10px 0;
@@ -228,7 +228,7 @@ article > p > img {
   }
     .al li img {
       width: 160px;
-      height: 120px;
+      height: 160px;
     }
     .al li a {
       position: absolute;
@@ -236,7 +236,7 @@ article > p > img {
       left: 0;
       padding: 10px;
       width: 140px;
-      height: 100px;
+      height: 140px;
       font-size: 12px;
       line-height: 1.5;
       opacity: 0;
