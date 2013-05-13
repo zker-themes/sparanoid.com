@@ -4,36 +4,36 @@
 
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 
-<link rel=alternate href=/feed/ type=application/atom+xml>
-<link rel=stylesheet href=/{{ site.css-path }}/a.min.css>
+<link rel=alternate href={{ site.base }}/feed/ type=application/atom+xml>
+<link rel=stylesheet href={{ site.base }}/{{ site.css-path }}/a.css>
 {% if page.title == 'Sparanoid' %}<link rel=dns-prefetch href={{ site.file }}>{% endif %}
 
 <title>{% if page.title != 'Sparanoid' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
 
 <header>
-  <h1><a href=/>Sparanoid</a></h1>
+  <h1><a href={{ site.base }}/>Sparanoid</a></h1>
 </header>
 
 <nav>
   <ul>
-    <li{% if page.title == 'Sparanoid' %} class=current{% endif %}><a href=/ rel=home accesskey=x>Home</a></li>
-    <li{% if page.permalink == '/work/' or page.category == 'work' %} class=current{% endif %}><a href=/work/>Work</a></li>
-    <li{% if page.permalink == '/note/' or page.category == 'note' %} class=current{% endif %}><a href=/note/>Note</a></li>
-    <li{% if page.permalink == '/about/' or page.category == 'about' %} class=current{% endif %}><a href=/about/>About</a></li>
+    <li{% if page.title == 'Sparanoid' %} class=current{% endif %}><a href={{ site.base }}/ rel=home accesskey=x>Home</a></li>
+    <li{% if page.permalink == '/work/' or page.category == 'work' %} class=current{% endif %}><a href={{ site.base }}/work/>Work</a></li>
+    <li{% if page.permalink == '/note/' or page.category == 'note' %} class=current{% endif %}><a href={{ site.base }}/note/>Note</a></li>
+    <li{% if page.permalink == '/about/' or page.category == 'about' %} class=current{% endif %}><a href={{ site.base }}/about/>About</a></li>
   </ul>
 </nav>
 
 {{ content }}
 
-{% if page.category == "work" %} 
+{% if page.category == "work" %}
 <nav>
 {% if page.next_in_categories.url %}
-  <p><a href={{ page.next_in_categories.url }}/>{{ page.next_in_categories.title }}</a> |
+  <p><a href={{ site.base }}{{ page.next_in_categories.url }}/>{{ page.next_in_categories.title }}</a> |
 {% else %}
   <p>Top |
 {% endif %}
 {% if page.previous_in_categories.url %}
-  <a href={{ page.previous_in_categories.url }}/>{{ page.previous_in_categories.title }}</a> &gt;</p>
+  <a href={{ site.base }}{{ page.previous_in_categories.url }}/>{{ page.previous_in_categories.title }}</a> &gt;</p>
 {% else %}
   Bottom</p>
 {% endif %}
@@ -48,5 +48,5 @@
 {% endif %}
 
 <footer>
-  <p><a href=/>{{ site.name }}</a> / <a href=/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a></p>
+  <p><a href={{ site.base }}/>{{ site.name }}</a> / <a href={{ site.base }}/feed/ title="Feed - Atom (The Atom Syndication Format)">Atom</a></p>
 </footer>
