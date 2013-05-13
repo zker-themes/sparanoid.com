@@ -334,17 +334,16 @@ article {
       margin: 0;
     }
   }
-  .note, .download {
-    @icon: 40px;
-    background-size: @icon @icon;
-    padding-left: @icon * 1.25;
-  }
   .download {
     background: url(download.svg) no-repeat 0 0;
   }
   .note {
     background: url(note.svg) no-repeat 0 0;
-
+  }
+  .note, .download {
+    @icon: 40px;
+    background-size: @icon @icon;
+    padding-left: @icon * 1.25;
   }
 }
 
