@@ -2,12 +2,12 @@
 <meta name=viewport content="width=device-width, initial-scale=1.0">
 
 <title>{% if page.title != 'Sparanoid' %}{{ site.name }} - {% endif %}{{ page.title }}</title>
-<link rel=alternate href=/{{ site.feed }} type=application/atom+xml>
-<link rel=stylesheet href=/{{ site.css }}/a.css>
+<link rel=alternate href={{ site.base }}/{{ site.feed }} type=application/atom+xml>
+<link rel=stylesheet href={{ site.base }}/{{ site.css }}/a.css>
 {% if page.title == 'Sparanoid' %}<link rel=dns-prefetch href={{ site.file }}>{% endif %}
 
 <header>
-  <h1><a href=/ role=logo accesskey=x>Sparanoid</a></h1>
+  <h1><a href={{ site.base }}/ role=logo accesskey=x>Sparanoid</a></h1>
 </header>
 
 <nav role=navigation>
@@ -16,11 +16,11 @@
   {% if page.permalink == '/store/' or page.category == 'store' %}<ul class=nav-store>{% endif %}
   {% if page.permalink == '/note/' or page.category == 'note' %}<ul class=nav-note>{% endif %}
   {% if page.permalink == '/about/' or page.category == 'about' %}<ul class=nav-about>{% endif %}
-    <li{% if page.permalink == '/' or page.category == 'home' %} role=current{% endif %}><a href=/>Home</a></li>
-    <li{% if page.permalink == '/work/' or page.category == 'work' %} role=current{% endif %}><a href=/work/>Work</a></li>
-    <li{% if page.permalink == '/store/' or page.category == 'store' %} role=current{% endif %}><a href=/store/>Store</a></li>
-    <li{% if page.permalink == '/note/' or page.category == 'note' %} role=current{% endif %}><a href=/note/>Note</a></li>
-    <li{% if page.permalink == '/about/' or page.category == 'about' %} role=current{% endif %}><a href=/about/>About</a></li>
+    <li{% if page.permalink == '/' or page.category == 'home' %} role=current{% endif %}><a href={{ site.base }}/>Home</a></li>
+    <li{% if page.permalink == '/work/' or page.category == 'work' %} role=current{% endif %}><a href={{ site.base }}/work/>Work</a></li>
+    <li{% if page.permalink == '/store/' or page.category == 'store' %} role=current{% endif %}><a href={{ site.base }}/store/>Store</a></li>
+    <li{% if page.permalink == '/note/' or page.category == 'note' %} role=current{% endif %}><a href={{ site.base }}/note/>Note</a></li>
+    <li{% if page.permalink == '/about/' or page.category == 'about' %} role=current{% endif %}><a href={{ site.base }}/about/>About</a></li>
   </ul>
 </nav>
 
@@ -29,14 +29,14 @@
 {% if page.category == 'note' %}
 <nav role=pagination>
 {% if page.next_in_categories.url %}
-  <a role=next href={{ page.next_in_categories.url }}/>
+  <a role=next href={{ site.base }}{{ page.next_in_categories.url }}/>
     <span>Next</span>
     <span role=tooltip>{{ page.next_in_categories.title }}</span>
   </a>
 {% else %}
 {% endif %}
 {% if page.previous_in_categories.url %}
-  <a role=prev href={{ page.previous_in_categories.url }}/>
+  <a role=prev href={{ site.base }}{{ page.previous_in_categories.url }}/>
     <span>Prev</span>
     <span role=tooltip>{{ page.previous_in_categories.title }}</span>
   </a>
@@ -52,7 +52,7 @@
   {% for post in site.tags.design %}
     <li>
       <img src="{{ site.file }}/thumb/{% if post.thumb %}{{ post.thumb }}{% else %}na.png{% endif %}" alt="{{ post.title }}">
-      <a href={{ post.url }}/>{{ post.title }}</a>
+      <a href={{ site.base }}{{ post.url }}/>{{ post.title }}</a>
     </li>
   {% endfor %}
   </ul>
@@ -66,7 +66,7 @@
   {% for post in site.tags.drawing %}
     <li>
       <img src="{{ site.file }}/thumb/{% if post.thumb %}{{ post.thumb }}{% else %}na.png{% endif %}" alt="{{ post.title }}">
-      <a href={{ post.url }}/>{{ post.title }}</a>
+      <a href={{ site.base }}{{ post.url }}/>{{ post.title }}</a>
     </li>
   {% endfor %}
   </ul>
@@ -81,6 +81,6 @@
 <!-- nothing -->
 {% else %}
 <footer>
-  <p><a href=/>{{ site.name }}</a> / <a href=/{{ site.feed }} title="Feed - Atom (The Atom Syndication Format)">Atom</a></p>
+  <p><a href={{ site.base }}/>{{ site.name }}</a> / <a href={{ site.base }}/{{ site.feed }} title="Feed - Atom (The Atom Syndication Format)">Atom</a></p>
 </footer>
 {% endif %}
