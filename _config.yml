@@ -35,8 +35,10 @@ server: ture
 server_port: 4321
 
 # exclude files for generated site
-exclude: 
+exclude:
 - README.md
 - LICENSE
 - Rakefile
 - nite.tmproj
+
+base: /lab/version/17-finale
