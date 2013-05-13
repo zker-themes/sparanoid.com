@@ -243,7 +243,7 @@ dl dd {
   margin-bottom: 40px;
 }
 aside {
-  padding: 60px 0 40px;
+  padding: 60px 0 0;
   width: 200px;
   text-align: center;
   margin: 0 auto;
@@ -271,7 +271,7 @@ aside .bsap .bsa_it_p a:hover {
   color: #000;
 }
 footer {
-  padding: 15px 0;
+  padding: 40px 0 15px;
   color: rgba(0, 0, 0, 0.35);
   font-family: Helvetica, 'Hiragino Sans GB', Arial, sans-serif;
   font-size: 12px;
@@ -280,4 +280,5 @@ footer {
   letter-spacing: .3em;
   font-size: 11px;
   text-align: center;
+  clear: both;
 }

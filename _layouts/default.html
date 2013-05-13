@@ -25,27 +25,6 @@
 
 {{ content }}
 
-{% if page.category == "work" %}
-<nav>
-{% if page.next_in_categories.url %}
-  <p><a href={{ site.base }}{{ page.next_in_categories.url }}/>{{ page.next_in_categories.title }}</a> |
-{% else %}
-  <p>----- |
-{% endif %}
-{% if page.previous_in_categories.url %}
-  <a href={{ site.base }}{{ page.previous_in_categories.url }}/>{{ page.previous_in_categories.title }}</a> &gt;</p>
-{% else %}
-  -----</p>
-{% endif %}
-</nav>
-{% endif %}
-
-{% if page.title != 'Sparanoid' %}
-<aside>
-{% include sponsor.html %}
-</aside>
-{% endif %}
-
 {% if page.title == 'Sparanoid' %}
 {% else %}
 <footer>
