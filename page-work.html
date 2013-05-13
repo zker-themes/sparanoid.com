@@ -11,7 +11,7 @@ desc: Designs &amp; drawings
 <ul role=work-list>
 {% for post in site.tags.design %}
   <li>
-    <a href={{ post.url }}/>
+    <a href={{ site.base }}{{ post.url }}/>
       <img src="{{ site.file }}/thumb/{% if post.thumb %}{{ post.thumb }}{% else %}na.png{% endif %}" alt="{{ post.title }}">
       <p>
         {{ post.title }}
@@ -28,7 +28,7 @@ desc: Designs &amp; drawings
 <ul role=work-list>
 {% for post in site.tags.drawing %}
   <li>
-    <a href={{ post.url }}/>
+    <a href={{ site.base }}{{ post.url }}/>
       <img src="{{ site.file }}/thumb/{% if post.thumb %}{{ post.thumb }}{% else %}na.png{% endif %}" alt="{{ post.title }}">
       <p>
         {{ post.title }}
