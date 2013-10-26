@@ -53,12 +53,16 @@ module.exports = (grunt) ->
 
       less:
         files: ["<%= recess.test.files.src %>"]
-        tasks: ["less:server", "autoprefixer", "recess"]
+        tasks: ["less:server", "autoprefixer", "recess", "copy"]
 
     less:
       server:
         options:
-          dumpLineNumbers: "all"
+          # dumpLineNumbers: "all"
+          sourceMap: true
+          # sourceMapFilename: "app.map"
+          sourceMapBasepath: "/assets/lessww/"
+          sourceMapRootpath: "/"
 
         files:
           "<%= core.app %>/assets/css/app.css": ["<%= recess.test.files.src %>"]
@@ -71,6 +75,16 @@ module.exports = (grunt) ->
       dist:
         files:
           "<%= core.app %>/assets/css/app.css": ["<%= core.app %>/assets/css/app.css"]
+
+    copy:
+      server:
+        files: [
+          expand: true
+          filter: 'isFile'
+          cwd: '<%= core.app %>'
+          src: ['**/*.less']
+          dest: '<%= core.dist %>'
+        ]
 
     htmlmin:
       dist:
@@ -177,9 +191,8 @@ module.exports = (grunt) ->
 
   # Fire up a server on local machine for development
   grunt.registerTask "server", [
-      "less:server"
-      "autoprefixer"
-    , "concurrent"
+      "clean"
+    , "concurrent:server"
   ]
 
   # Test task
