@@ -38,6 +38,6 @@ link: http://wordpress.org/extend/plugins/quotmarks-replacer/
   </footer>
 </blockquote>
 
-<p class=download><a href="http://wordpress.org/extend/plugins/quotmarks-replacer/">Download</a> it at WordPress.org</p>
+<p class="download"><a href="http://wordpress.org/extend/plugins/quotmarks-replacer/">Download</a> it at WordPress.org</p>
 
-<p class=store>Love this plugin? please consider <a href="{{ '/donate/' | prepend: site.base }}">buying me a cup of coffee.</a></p>
+<p class="store">Love this plugin? please consider <a href="{{ '/donate/' | prepend: site.base }}">buying me a cup of coffee.</a></p>

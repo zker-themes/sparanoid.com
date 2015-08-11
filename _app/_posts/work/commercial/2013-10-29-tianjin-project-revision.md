@@ -34,4 +34,4 @@ plugin: intense
 <h2>Study Cards</h2>
 <p><img src="{{ site.file }}/tianjin-revision-08.jpg" alt="Study Cards"></p>
 
-<p class=note>You can also view the <a href="{% post_url /work/commercial/2012-06-11-tianjin-project %}">original version</a> of this project.</p>
+<p class="note">You can also view the <a href="{% post_url /work/commercial/2012-06-11-tianjin-project %}">original version</a> of this project.</p>

@@ -28,11 +28,11 @@ plugin: intense
 
 <p lang=zh>來自學園都市警備員的屏幕保護，在第 24 話中出現過，自適應寬高比，最大測試過 2560 &times; 1600 的顯示器。由于警備員的圖標並不十分美觀，所以安裝包就沿用了風紀委員的</p>
 
-<p class=download><a href="{{ site.file }}/download/judgment_icon.7z">Download</a> / judgment_icon.7z</p>
-<p class=download><a href="{{ site.file }}/download/judgment_library.7z">Download</a> / judgment_library.7z</p>
-<p class=download><a href="{{ site.file }}/download/judgment_screensaver.7z">Download</a> / judgment_screensaver.7z</p>
-<p class=download><a href="{{ site.file }}/download/judgment_screensaver_chs.exe">Download</a> / judgment_screensaver_chs.exe</p>
-<p class=download><a href="{{ site.file }}/download/judgment_screensaver_en.exe">Download</a> / judgment_screensaver_en.exe</p>
-<p class=download><a href="{{ site.file }}/download/antiskill_screensaver.7z">Download</a> / antiskill_screensaver.7z</p>
-<p class=download><a href="{{ site.file }}/download/antiskill_screensaver_chs.exe">Download</a> / antiskill_screensaver_chs.exe</p>
-<p class=download><a href="{{ site.file }}/download/antiskill_screensaver_en.exe">Download</a> / antiskill_screensaver_en.exe</p>
+<p class="download"><a href="{{ site.file }}/download/judgment_icon.7z">Download</a> / judgment_icon.7z</p>
+<p class="download"><a href="{{ site.file }}/download/judgment_library.7z">Download</a> / judgment_library.7z</p>
+<p class="download"><a href="{{ site.file }}/download/judgment_screensaver.7z">Download</a> / judgment_screensaver.7z</p>
+<p class="download"><a href="{{ site.file }}/download/judgment_screensaver_chs.exe">Download</a> / judgment_screensaver_chs.exe</p>
+<p class="download"><a href="{{ site.file }}/download/judgment_screensaver_en.exe">Download</a> / judgment_screensaver_en.exe</p>
+<p class="download"><a href="{{ site.file }}/download/antiskill_screensaver.7z">Download</a> / antiskill_screensaver.7z</p>
+<p class="download"><a href="{{ site.file }}/download/antiskill_screensaver_chs.exe">Download</a> / antiskill_screensaver_chs.exe</p>
+<p class="download"><a href="{{ site.file }}/download/antiskill_screensaver_en.exe">Download</a> / antiskill_screensaver_en.exe</p>

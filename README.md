@@ -10,7 +10,7 @@
 $ bundle install && npm install && grunt serve
 ```
 
-Need a simpler setup using this theme? Try [AMSF](http://github.com/sparanoid/almace-scaffolding/).
+This site is built by [Almace Scaffolding](http://github.com/sparanoid/almace-scaffolding/).
 
 ## Author
 

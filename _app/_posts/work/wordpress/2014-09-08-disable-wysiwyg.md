@@ -24,4 +24,4 @@ You clients are always using the crappy visual editor in your WordPress? They al
 
 Disable WYSIWYG sets `user_can_richedit` to `false` that disables TinyMCE Visual Editor (WYSIWYG editor) totally completely permanently forever. This plugin also works fine with multisite enabled WordPress (aka. WordPress Mu). If you love this plugin, please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
 
-<p class=download><a href="http://wordpress.org/plugins/disable-wysiwyg/">Download</a> it at WordPress.org</p>
+<p class="download"><a href="http://wordpress.org/plugins/disable-wysiwyg/">Download</a> it at WordPress.org</p>

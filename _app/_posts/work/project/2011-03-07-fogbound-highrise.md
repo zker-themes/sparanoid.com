@@ -8,6 +8,6 @@ thumb: fogbound-highrise.png
 plugin: intense
 ---
 
-<p class=browser><img src="{{ site.file }}/fogbound-highrise-screenshot-large.png"></p>
+<p class="browser"><img src="{{ site.file }}/fogbound-highrise-screenshot-large.png"></p>
 
 <p>Version 15, source code hosted at <a href="https://github.com/sparanoid/sparanoid.com">GitHub</a></p>
