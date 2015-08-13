@@ -16,30 +16,31 @@
 
 <!-- Prepare for SVG header -->
 {% capture amsf_page_heading_type_svg %}
-  {% for i in page.svg-headline %}
-    {% include {{ i }} %}
-  {% endfor %}
-{% endcapture %}
-
-<!-- Prepare for SVG header styles -->
-{% capture amsf_page_heading_svg_style %}
-  {% if page.svg-headline %}
-    <style scoped>
-      h1 svg {
-        width: {{ page.svg-headline-width | times: 0.1 }}vw;
-        height: {{ page.svg-headline-height | times: 0.1 }}vw;
-      }
-    </style>
-  {% endif %}
+  <img
+    src="{{ site.assets | prepend: site.base }}/{{ page.svg-headline }}"
+    {% if page.svg-headline-width %}
+      style="width: {{ page.svg-headline-width | times: 0.1 }}vw;"
+    {% else %}
+      style="width: 50vw;"
+    {% endif %}
+  >
 {% endcapture %}
 
 {% capture amsf_page_heading_text %}
   {% if page.img-headline %}
+    {{ page.title }}
     {{ amsf_page_heading_type_img }}
   {% elsif page.svg-headline %}
+    {{ page.title }}
     {{ amsf_page_heading_type_svg }}
   {% else %}
     {{ page.title }} <span></span>
+  {% endif %}
+{% endcapture %}
+
+{% capture amsf_page_heading_class %}
+  {% if page.img-headline or page.svg-headline %}
+    image-title
   {% endif %}
 {% endcapture %}
 
@@ -64,9 +65,10 @@
 
   <!-- Post title -->
   <header>
-    {{ amsf_page_heading_svg_style }}
 
-    <h1>{{ amsf_page_heading }}</h1>
+    <h1 class="{{ amsf_page_heading_class }}" title="{{ page.title | strip_html | xml_escape }}">
+      {{ amsf_page_heading }}
+    </h1>
 
     {% if page.date %}
       <small>

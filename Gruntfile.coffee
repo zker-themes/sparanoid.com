@@ -184,11 +184,15 @@ module.exports = (grunt) ->
       #   src: "**/*.html"
       #   dest: "<%= config.dist %>"
 
-    smoosher:
+    assets_inline:
       options:
         jsDir: "<%= config.dist %>"
         cssDir: "<%= config.dist %>"
-        includeTag: "[data-inline]"
+        assetsDir: "<%= config.dist %>"
+        includeTag: "?assets-inline"
+        inlineImg: false
+        inlineSvg: true
+        inlineSvgBase64: false
         assetsUrlPrefix: "<%= config.base %>/assets/"
 
       dist:
@@ -333,13 +337,13 @@ module.exports = (grunt) ->
           }
         ]
 
-      availability:
-        src: ["<%= config.app %>/_data/curtana.yml"]
-        dest: "<%= config.app %>/_data/curtana.yml"
+      amsf__site__update_version:
+        src: ["<%= config.app %>/_pages/index.html"]
+        dest: "<%= config.app %>/_pages/index.html"
         replacements: [
           {
-            from: /(free:)(.+)/g
-            to: "$1 true"
+            from: /("amsf-version">)\d+\.\d+\.\d+/g
+            to: "$1<%= config.pkg.version %>"
           }
         ]
 
@@ -373,22 +377,22 @@ module.exports = (grunt) ->
         ]
         notify: true
 
+    conventionalChangelog:
+      options:
+        changelogOpts:
+          preset: "angular"
+
+      dist:
+        src: "CHANGELOG.md"
+
     bump:
       options:
         files: ["package.json"]
+        updateConfigs: ["config.pkg"]
         commitMessage: 'chore: release v%VERSION%'
-        commitFiles: [
-          "package.json"
-          "CHANGELOG.md"
-        ]
+        commitFiles: ["-a"]
         tagMessage: 'chore: create tag %VERSION%'
         push: false
-
-  grunt.registerTask "reset", "Reset user availability", (target) ->
-    grunt.config.set "replace.availability.replacements.0.to", "$1 true"
-    grunt.task.run [
-      "replace"
-    ]
 
   grunt.registerTask "serve", "Fire up a server on local machine for development", [
     "clean"
@@ -418,30 +422,27 @@ module.exports = (grunt) ->
     "replace:amsf__switch__update_config"
   ]
 
-  grunt.registerTask "build", "Build site with `jekyll`, use `--busy` to set availability to false", (target) ->
-    grunt.config.set "replace.availability.replacements.0.to", "$1 false" if grunt.option("busy")
-    grunt.task.run [
-      "replace:availability"
-      "clean"
-      "coffeelint"
-      "uglify"
-      "lesslint"
-      "less:dist"
-      "autoprefixer:dist"
-      "csscomb"
-      "jekyll:dist"
-      "concurrent:dist"
-      "smoosher"
-      "usebanner"
-      "cleanempty"
-      "reset"
-    ]
+  grunt.registerTask "build", "Build site with jekyll", [
+    "clean"
+    "coffeelint"
+    "uglify"
+    "lesslint"
+    "less:dist"
+    "autoprefixer:dist"
+    "csscomb"
+    "jekyll:dist"
+    "concurrent:dist"
+    "assets_inline"
+    "usebanner"
+    "cleanempty"
+  ]
 
   # Release new version
   grunt.registerTask "release", "Build, bump and commit", (type) ->
     grunt.task.run [
       "bump-only:#{type or 'patch'}"
-      "changelog"
+      "conventionalChangelog"
+      "replace:amsf__site__update_version"
       "bump-commit"
     ]
 

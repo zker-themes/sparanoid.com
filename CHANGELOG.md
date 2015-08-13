@@ -1,6 +1,63 @@
+<a name="0.0.31"></a>
+## [0.0.31](https://github.com/sparanoid/almace-scaffolding/compare/v0.0.30...v0.0.31) (2015-08-13)
+
+
+### Bug Fixes
+
+* **style:** add missing code block background for Rouge parser ([c38e1bf](https://github.com/sparanoid/almace-scaffolding/commit/c38e1bf))
+* **template:** heading padding fix ([470b508](https://github.com/sparanoid/almace-scaffolding/commit/470b508))
+* **template:** image titles not recognized in Safari Reader mode ([9de3d64](https://github.com/sparanoid/almace-scaffolding/commit/9de3d64))
+
+### Features
+
+* **docs:** update content and try new structure ([8d4f0f4](https://github.com/sparanoid/almace-scaffolding/commit/8d4f0f4))
+* **grunt:** remove availability task from sparanoid.com ([727c601](https://github.com/sparanoid/almace-scaffolding/commit/727c601))
+* **grunt:** use `grunt-assets-inline` as a replacement of `grunt-html-smoosher` ([841a59a](https://github.com/sparanoid/almace-scaffolding/commit/841a59a))
+* **template:** update homepage ([76775ef](https://github.com/sparanoid/almace-scaffolding/commit/76775ef))
+* **theme:** add theme basic info ([21fc0c3](https://github.com/sparanoid/almace-scaffolding/commit/21fc0c3))
+* **theme:** new syntax for inline assets ([70421fe](https://github.com/sparanoid/almace-scaffolding/commit/70421fe))
+* **theme:** use dedicated svg directory outside the jekyll `_includes` ([4962189](https://github.com/sparanoid/almace-scaffolding/commit/4962189))
+
+
+### BREAKING CHANGES
+
+* This will change the way SVG titles got embeded, now SVG titles are inlined into `<img>` tags instead of putting `<svg>` directly into HTML.
+
+
+<a name="0.0.30"></a>
+## [0.0.30](https://github.com/sparanoid/almace-scaffolding/compare/v0.0.29...v0.0.30) (2015-08-11)
+
+
+### Bug Fixes
+
+* **grunt:** avoid executing other replace task ([22d130c](https://github.com/sparanoid/almace-scaffolding/commit/22d130c))
+* **grunt:** index version not bumped ([c9e9f8a](https://github.com/sparanoid/almace-scaffolding/commit/c9e9f8a))
+
+### Features
+
+* **grunt:** try version auto bump for index ([3445afb](https://github.com/sparanoid/almace-scaffolding/commit/3445afb))
+
+
+
+<a name="0.0.29"></a>
+## [0.0.29](https://github.com/sparanoid/almace-scaffolding/compare/v0.0.27...v0.0.29) (2015-08-11)
+
+
+### Features
+
+* **grunt:** update `conventionalChangelog` ([39e8458](https://github.com/sparanoid/almace-scaffolding/commit/39e8458))
+
+
+
+<a name"0.0.28"></a>
+### 0.0.28 (aka. 24.1.14) (2015-08-02)
+
+This is a special tag release merged from sparanoid.com with the same commit history.
+
 <a name"24.1.14"></a>
 ### 24.1.14 (2015-08-02)
 
+Note: the following changelog are inherited from [sparanoid/sparanoid.com](http://github.com/sparanoid/sparanoid.com).
 
 #### Bug Fixes
 
@@ -631,7 +688,7 @@ You can read more about the footnote syntax at https://github.com/vmg/redcarpet
 
 #### Breaking Changes
 
-* Removal of `.txt` CSS class may break your existing post layout. Now `.txt` is replaced with `main.content`, a global content wrapper. To fix layout breaks for your existing site: simply remove all `<div class="txt">` containers from your posts
+* Removal of `.txt` CSS class may break your existing post layout. Now `.txt` is replaced with `main.content`, a global content wrapper. To fix layout breaks for your existing site: simply remove all `<div class=txt>` containers from your posts
  ([1f400475](http://github.com/sparanoid/sparanoid.com/commit/1f400475e3f3611919299fdcccad73779539fd16))
 
 
