@@ -1,3 +1,34 @@
+<a name="24.1.15"></a>
+## [24.1.15](https://github.com/sparanoid/sparanoid.com/compare/v24.1.14...v24.1.15) (2015-08-14)
+
+
+### Bug Fixes
+
+* **grunt:** avoid duplicated jekyll watch ([00b11a7](https://github.com/sparanoid/sparanoid.com/commit/00b11a7))
+* **jekyll:** missing gist example due to recently Jekyll beta changes ([2989e23](https://github.com/sparanoid/sparanoid.com/commit/2989e23))
+* **post:** add quotes to CSS class for new Markdown parser ([d6d0c64](https://github.com/sparanoid/sparanoid.com/commit/d6d0c64))
+* **template:** missing quotes when parsing markdown ([52441ff](https://github.com/sparanoid/sparanoid.com/commit/52441ff))
+* **theme:** wrong theme slug for Curtana ([595432c](https://github.com/sparanoid/sparanoid.com/commit/595432c))
+
+### Features
+
+* **basic:** theme support ([5939d5a](https://github.com/sparanoid/sparanoid.com/commit/5939d5a))
+* **grunt:** basic theme switching support ([0892675](https://github.com/sparanoid/sparanoid.com/commit/0892675))
+* **grunt:** better theme switch handling ([2a58c96](https://github.com/sparanoid/sparanoid.com/commit/2a58c96))
+* **grunt:** remove `grunt-html-validation` support ([ebd502d](https://github.com/sparanoid/sparanoid.com/commit/ebd502d))
+* **jekyll:** remove Gists support by default ([f88b013](https://github.com/sparanoid/sparanoid.com/commit/f88b013))
+* **jekyll:** tweak kramdown config ([4d3f033](https://github.com/sparanoid/sparanoid.com/commit/4d3f033))
+* **jekyll:** update jekyll, use default markdown and highlighter parser ([4320973](https://github.com/sparanoid/sparanoid.com/commit/4320973))
+* **style:** remove centered styles for sparanoid.com ([e71be8e](https://github.com/sparanoid/sparanoid.com/commit/e71be8e))
+* **template:** sync templates from AMSF ([1a42843](https://github.com/sparanoid/sparanoid.com/commit/1a42843))
+
+
+### BREAKING CHANGES
+
+* Jekyll removes this support by default, you need install `jekyll-gist` plugin to support Gists
+* Now that Kramdown and Rouge are used as markdown parser and syntax highlighter, please check if everything work as expected.
+
+
 <a name="0.0.33"></a>
 ## [0.0.33](https://github.com/sparanoid/almace-scaffolding/compare/v0.0.32...v0.0.33) (2015-08-14)
 
