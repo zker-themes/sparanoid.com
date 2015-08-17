@@ -68,7 +68,7 @@ module.exports = (grunt) ->
         files: ["<%= config.assets %>/_less/**/*.less"]
         tasks: [
           "less:serve"
-          "autoprefixer:serve"
+          "postcss:serve"
         ]
         options:
           interrupt: true
@@ -97,6 +97,7 @@ module.exports = (grunt) ->
           strictMath: true
           sourceMap: true
           outputSourceFiles: true
+          dumpLineNumbers: "comments"
 
         files: [
           expand: true
@@ -109,14 +110,22 @@ module.exports = (grunt) ->
       dist:
         files: "<%= less.serve.files %>"
 
-    autoprefixer:
+    postcss:
       serve:
         src: "<%= config.assets %>/css/*.css"
         options:
-          map: true
+          map:
+            inline: false
+          processors: [
+            require("autoprefixer-core")(browsers: "last 1 versions")
+          ]
 
       dist:
-        src: "<%= autoprefixer.serve.src %>"
+        src: "<%= postcss.serve.src %>"
+        options:
+          processors: [
+            require("autoprefixer-core")(browsers: "last 2 versions")
+          ]
 
     csscomb:
       options:
@@ -271,7 +280,6 @@ module.exports = (grunt) ->
           {
             expand: true
             dot: true
-            filter: "isFile"
             cwd: "<%= config.amsf_core %>/"
             src: [
               ".*"
@@ -290,7 +298,16 @@ module.exports = (grunt) ->
           {
             expand: true
             dot: true
-            filter: "isFile"
+            cwd: "<%= config.amsf_core %>/_app/"
+            src: [
+              "*.xml"
+              "*.txt"
+            ]
+            dest: "<%= config.app %>/"
+          }
+          {
+            expand: true
+            dot: true
             cwd: "<%= config.amsf_core %>/_app/_includes/"
             src: [
               "_amsf.html"
@@ -491,7 +508,7 @@ module.exports = (grunt) ->
     "clean"
     "copy:serve"
     "less:serve"
-    "autoprefixer:serve"
+    "postcss:serve"
     "jekyll:serve"
     "browserSync"
     "watch"
@@ -549,7 +566,7 @@ module.exports = (grunt) ->
     "uglify"
     "lesslint"
     "less:dist"
-    "autoprefixer:dist"
+    "postcss:dist"
     "csscomb"
     "jekyll:dist"
     "concurrent:dist"
