@@ -1190,7 +1190,7 @@ You can read more about the footnote syntax at https://github.com/vmg/redcarpet
 - Add `role=announcement`
 - Simplified `.gitignore` file
 - Fixed typo, props @disinfeqt
-- `lang="zh"` -> `lang=zh`
+- `lang="zh"` -> `lang="zh"`
 - More specified Rakefile comment
 - Update post WordPress Plugin - Quotmarks Replacer, better blockquote styles
 - Better tweet button position
