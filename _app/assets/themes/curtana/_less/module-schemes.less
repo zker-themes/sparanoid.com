@@ -1,13 +1,4 @@
-// Your custom styles here
-
-// Import syntax highlighting theme
-@import "syntax";
-
-// Import style fixes for plug-ins
-@import "plugins";
-
-// Import print styles
-@import "print";
+// Custom color schemes
 
 // Change @link-color can change to whole theme color scheme
 // All other vaiables in `app.less` can be overwritten here
@@ -61,39 +52,3 @@
 // Uncomment the following style will enalbe alternative post title color, this is useful when you're using the custom theme from above.
 // .content { .list h2 a, header h1, header h1 a { color: @link-color; } }
 // .external span { background: @link-color; }
-
-// Alternative title size
-// By default all heading levels have the same font size, but many people may not like this, so here's an alternative font size stack:
-// .content {
-//   h2 { font-size: 108%; opacity: .6; }
-//   h3 { font-size: 96%;  opacity: .5; }
-//   h4 { font-size: 84%;  opacity: .4; }
-//   h5 { font-size: 72%;  opacity: .3; }
-//   h6 { font-size: 60%;  opacity: .2; }
-// }
-
-// Custom styles for sparanoid.com
-.logo {
-  width: 50%;
-}
-
-.content {
-
-  // Limit post content width
-  .page-content,
-  .post-content {
-    max-width: 85%;
-
-    @media (max-width: @breakpoint-sm) {
-      max-width: 100%;
-    }
-
-    // Unset border and padding for blockquotes, and make it lighter
-    blockquote {
-
-      > p {
-        opacity: .6;
-      }
-    }
-  }
-}

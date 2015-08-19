@@ -1,0 +1,27 @@
+// User custom styles
+
+// Custom styles for sparanoid.com
+.logo {
+  width: 50%;
+}
+
+.content {
+
+  // Limit post content width
+  .page-content,
+  .post-content {
+    max-width: 85%;
+
+    @media (max-width: @breakpoint-sm) {
+      max-width: 100%;
+    }
+
+    // Unset border and padding for blockquotes, and make it lighter
+    blockquote {
+
+      > p {
+        opacity: .6;
+      }
+    }
+  }
+}
