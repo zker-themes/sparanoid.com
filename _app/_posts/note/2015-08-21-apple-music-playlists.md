@@ -16,10 +16,10 @@ A curated list of awesome dance music for coding and doing workout.
 
 <img src="{{ site.file }}/apple-music-playlist-dance-enhanced-ja.png">
 
-Dance Enhanced Japan version, not available at the moment…
+Dance Enhanced Japanese version, not available at the moment…
 
 ## Voice Memos
 
 <img src="{{ site.file }}/apple-muisc-playlist-voice-memos.png">
 
-My personal voice memos, not public avaiable of course. One intereting thing is that the cover got overridden every time I update memos from my iPhone.
+My personal voice memos, not public available of course. One interesting thing is that the cover got overridden every time I update memos from my iPhone.
