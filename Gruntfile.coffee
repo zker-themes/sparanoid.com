@@ -87,7 +87,7 @@ module.exports = (grunt) ->
           interrupt: true
 
       jekyll:
-        files: ["<%= config.app %>/**/*", "!_*"]
+        files: ["<%= config.app %>/**/*", "!_*", "_config*.yml"]
         tasks: ['jekyll:serve']
 
     uglify:
@@ -200,6 +200,15 @@ module.exports = (grunt) ->
           dest: "<%= config.dist %>/"
         ]
 
+    minjson:
+      dist:
+        files: [
+          expand: true
+          cwd: "<%= config.dist %>"
+          src: "**/*.json"
+          dest: "<%= config.dist %>/"
+        ]
+
     cssmin:
       dist:
         options:
@@ -285,6 +294,7 @@ module.exports = (grunt) ->
         tasks: [
           "htmlmin"
           "xmlmin"
+          "minjson"
           "cssmin"
         ]
 
@@ -332,8 +342,9 @@ module.exports = (grunt) ->
             dot: true
             cwd: "<%= amsf.core %>/_app/"
             src: [
-              "*.xml"
+              "*.json"
               "*.txt"
+              "*.xml"
             ]
             dest: "<%= config.app %>/"
           }
