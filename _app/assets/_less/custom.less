@@ -12,11 +12,12 @@
   .post-content {
     max-width: 85%;
 
-    @media (max-width: @breakpoint-sm) {
+    // Reset to full-width for small devices
+    @media (max-width: @breakpoint-md), (max-width: @breakpoint-sm) {
       max-width: 100%;
     }
 
-    // Unset border and padding for blockquotes, and make it lighter
+    // Make blockquotes lighter
     blockquote {
 
       > p {
