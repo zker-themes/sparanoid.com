@@ -20,17 +20,17 @@ plugin: intense
 
 <h2>Book Preview</h2>
 
-<p><img src="{{ site.file }}/tianjin-project-preview-merged.jpg" alt="Tianjin Project Book Preview #6"></p>
+<p><img class="no-enlarge" src="{{ site.file }}/tianjin-project-preview-merged.jpg" alt="Tianjin Project Book Preview #6"></p>
 
-<p><img src="{{ site.file }}/tianjin-project-preview-01.jpg" alt="Tianjin Project Book Preview #1"></p>
+<p><img class="no-enlarge" src="{{ site.file }}/tianjin-project-preview-01.jpg" alt="Tianjin Project Book Preview #1"></p>
 
-<p><img src="{{ site.file }}/tianjin-project-preview-02.jpg" alt="Tianjin Project Book Preview #2"></p>
+<p><img class="no-enlarge" src="{{ site.file }}/tianjin-project-preview-02.jpg" alt="Tianjin Project Book Preview #2"></p>
 
-<p><img src="{{ site.file }}/tianjin-project-preview-03.jpg" alt="Tianjin Project Book Preview #3"></p>
+<p><img class="no-enlarge" src="{{ site.file }}/tianjin-project-preview-03.jpg" alt="Tianjin Project Book Preview #3"></p>
 
-<p><img src="{{ site.file }}/tianjin-project-preview-04.jpg" alt="Tianjin Project Book Preview #4"></p>
+<p><img class="no-enlarge" src="{{ site.file }}/tianjin-project-preview-04.jpg" alt="Tianjin Project Book Preview #4"></p>
 
-<p><img src="{{ site.file }}/tianjin-project-preview-05.jpg" alt="Tianjin Project Book Preview #5"></p>
+<p><img class="no-enlarge" src="{{ site.file }}/tianjin-project-preview-05.jpg" alt="Tianjin Project Book Preview #5"></p>
 
 <h2>Promo Video</h2>
 
