@@ -1,3 +1,24 @@
+<a name="24.1.16"></a>
+## [24.1.16](https://github.com/sparanoid/sparanoid.com/compare/v24.1.15...v24.1.16) (2015-08-26)
+
+
+### Bug Fixes
+
+* **post:** add quotes ([babc1ee](https://github.com/sparanoid/sparanoid.com/commit/babc1ee))
+* **post:** typo ([0329e39](https://github.com/sparanoid/sparanoid.com/commit/0329e39))
+* **post:** wrong format ([eb1510a](https://github.com/sparanoid/sparanoid.com/commit/eb1510a))
+
+### Features
+
+* **post:** better post layout ([89d4d58](https://github.com/sparanoid/sparanoid.com/commit/89d4d58))
+* **post:** new post “Apple Music Playlist” ([fab6f08](https://github.com/sparanoid/sparanoid.com/commit/fab6f08))
+* **posts:** add old posts ([ecdaddf](https://github.com/sparanoid/sparanoid.com/commit/ecdaddf))
+* **posts:** update language front-matter ([39724f5](https://github.com/sparanoid/sparanoid.com/commit/39724f5))
+* **style:** update custom styles ([7ed24c7](https://github.com/sparanoid/sparanoid.com/commit/7ed24c7))
+* **template:** add quotes for attributes ([47a2f7b](https://github.com/sparanoid/sparanoid.com/commit/47a2f7b))
+
+
+
 <a name="24.1.15"></a>
 ## [24.1.15](https://github.com/sparanoid/sparanoid.com/compare/v24.1.14...v24.1.15) (2015-08-14)
 
