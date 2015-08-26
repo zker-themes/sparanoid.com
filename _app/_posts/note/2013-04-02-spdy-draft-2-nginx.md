@@ -2,7 +2,7 @@
 layout: post
 title: SPDY Draft 2 and Nginx
 category: note
-lang: zh-cn
+languages: zh-cn
 ---
 
 I've already [deployed SPDY]({% post_url /note/2012-10-12-playing-with-spdy-draft-2 %}) back in September, 2012. Now I'd like to share how to setup SPDY and OpenSSL on CentOS with you.

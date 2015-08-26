@@ -2,7 +2,7 @@
 layout: post
 title: Playing with OCSP Stapling
 category: note
-lang: zh-cn
+languages: zh-cn
 ---
 
 本站已嘗試性的部署了 OCSP Stapling，什麼是 OCSP Stapling？JFGI。如果您通過 HTTPS 協議訪問本網站，可以感受到不明顯的訪問速度提升

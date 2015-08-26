@@ -2,7 +2,7 @@
 layout: post
 title: Playing with SPDY Draft 2
 category: note
-lang: zh-cn
+languages: zh-cn
 ---
 
 本站已嘗試性的部署了 SPDY 協議（Draft 2），什麼是 SPDY？JFGI。本站已於上個月底完成並且實現了 SPDY 協議的全站開啟。當你網絡狀況良好或身處中國大陸之外的地區時，使用最新版 Chrome、Safari、Opera 瀏覽器訪問本站會有更快的訪問速度

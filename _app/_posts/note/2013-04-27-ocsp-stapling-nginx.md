@@ -2,7 +2,7 @@
 layout: post
 title: OCSP Stapling and Nginx
 category: note
-lang: zh-cn
+languages: zh-cn
 ---
 
 I've already [deployed OCSP Stapling]({% post_url /note/2012-11-04-playing-with-ocsp-stapling %}) back in November, 2012. Now I'd like to share how to setup OCSP Stapling on CentOS with you.
