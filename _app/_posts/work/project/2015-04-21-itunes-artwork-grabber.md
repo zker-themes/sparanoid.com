@@ -5,6 +5,13 @@ category: work
 tag: project
 head: |
   <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pjdeblccplohlgedbefopohaedodcgci">
+foot: |
+  <script>
+  +function update_install_button() {
+    var install_button = document.getElementById('install-button');
+    install_button.removeAttribute(chrome.app.isInstalled ? "onclick" : "disabled");
+  }();
+  </script>
 ---
 
 > (Yet Another) iTunes Artwork Grabber
@@ -46,10 +53,3 @@ Try this fancy [video demo](https://www.youtube.com/watch?v=8NVyzKb7VIY).
 ## Love this?
 
 Please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
-
-<script>
-+function update_install_button() {
-  var install_button = document.getElementById('install-button');
-  install_button.removeAttribute(chrome.app.isInstalled ? "onclick" : "disabled");
-}();
-</script>
