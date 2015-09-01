@@ -188,7 +188,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "<%= config.dist %>"
           src: "**/*.html"
-          dest: "<%= config.dist %>/"
+          dest: "<%= config.dist %>"
         ]
 
     xmlmin:
@@ -197,7 +197,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "<%= config.dist %>"
           src: "**/*.xml"
-          dest: "<%= config.dist %>/"
+          dest: "<%= config.dist %>"
         ]
 
     minjson:
@@ -206,7 +206,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "<%= config.dist %>"
           src: "**/*.json"
-          dest: "<%= config.dist %>/"
+          dest: "<%= config.dist %>"
         ]
 
     cssmin:
@@ -218,7 +218,7 @@ module.exports = (grunt) ->
           expand: true
           cwd: "<%= config.dist %>"
           src: ["**/*.css", "!*.min.css"]
-          dest: "<%= config.dist %>/"
+          dest: "<%= config.dist %>"
         ]
 
       # html:
@@ -243,7 +243,23 @@ module.exports = (grunt) ->
           expand: true
           cwd: "<%= config.dist %>"
           src: "**/*.html"
-          dest: "<%= config.dist %>/"
+          dest: "<%= config.dist %>"
+        ]
+
+    cacheBust:
+      options:
+        encoding: "utf8"
+        algorithm: "md5"
+        length: 8
+        deleteOriginals: true
+
+      dist:
+        files: [
+          expand: true
+          baseDir: "<%= config.dist %>"
+          cwd: "<%= config.dist %>"
+          src: "**/*.html"
+          dest: "<%= config.dist %>"
         ]
 
     usebanner:
@@ -286,8 +302,26 @@ module.exports = (grunt) ->
       s3:
         command: "s3cmd sync -rP --guess-mime-type --delete-removed --no-preserve --cf-invalidate --add-header=Cache-Control:max-age=31536000 --exclude '.DS_Store' <%= config.cfg.static_files %> <%= config.cfg.s3_bucket %>"
 
+      amsf__theme__to_app:
+        command: [
+          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/config.yml <%= config.app %>/_data/<%= amsf.theme.new_name %>.yml"
+          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/includes/  <%= config.app %>/_includes/themes/<%= amsf.theme.new_name %>/includes/"
+          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/layouts/   <%= config.app %>/_includes/themes/<%= amsf.theme.new_name %>/layouts/"
+          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/assets/    <%= config.app %>/assets/themes/<%= amsf.theme.new_name %>/"
+          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/pages/     <%= config.app %>/_pages/themes/<%= amsf.theme.new_name %>/"
+        ].join("&&")
+
+      amsf__theme__to_cache:
+        command: [
+          "rsync -avz --delete --progress <%= config.app %>/_data/<%= amsf.theme.current %>.yml                  <%= amsf.base %>/themes/<%= amsf.theme.current %>/config.yml"
+          "rsync -avz --delete --progress <%= config.app %>/_includes/themes/<%= amsf.theme.current %>/includes/ <%= amsf.base %>/themes/<%= amsf.theme.current %>/includes/"
+          "rsync -avz --delete --progress <%= config.app %>/_includes/themes/<%= amsf.theme.current %>/layouts/  <%= amsf.base %>/themes/<%= amsf.theme.current %>/layouts/"
+          "rsync -avz --delete --progress <%= config.app %>/assets/themes/<%= amsf.theme.current %>/             <%= amsf.base %>/themes/<%= amsf.theme.current %>/assets/"
+          "rsync -avz --delete --progress <%= config.app %>/_pages/themes/<%= amsf.theme.current %>/             <%= amsf.base %>/themes/<%= amsf.theme.current %>/pages/"
+        ].join("&&")
+
       amsf__theme__to_dev_repo:
-        command: "rsync -avz --delete --progress --exclude=.git <%= amsf.base %>/themes/<%= amsf.theme.current %>/ /Users/sparanoid/Git/amsf-<%= amsf.theme.current %> > rsync-theme-dev.log"
+        command: "rsync -avz --delete --progress --exclude=.git --exclude=node_modules <%= amsf.base %>/themes/<%= amsf.theme.current %>/ /Users/sparanoid/Git/amsf-<%= amsf.theme.current %> > rsync-theme-dev.log"
 
     concurrent:
       options:
@@ -325,7 +359,7 @@ module.exports = (grunt) ->
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.core %>/"
+            cwd: "<%= amsf.core %>"
             src: [
               ".*"
               "*.json"
@@ -349,7 +383,7 @@ module.exports = (grunt) ->
               "*.txt"
               "*.xml"
             ]
-            dest: "<%= config.app %>/"
+            dest: "<%= config.app %>"
           }
           {
             expand: true
@@ -366,78 +400,6 @@ module.exports = (grunt) ->
             cwd: "<%= amsf.core %>/_app/_layouts/"
             src: ["**"]
             dest: "<%= config.app %>/_layouts/"
-          }
-        ]
-
-      amsf__theme__to_app:
-        files: [
-          {
-            src: ["<%= amsf.base %>/themes/<%= amsf.theme.new_name %>/config.yml"]
-            dest: "<%= config.app %>/_data/<%= amsf.theme.new_name %>.yml"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= amsf.base %>/themes/<%= amsf.theme.new_name %>/includes/"
-            src: ["**"]
-            dest: "<%= config.app %>/_includes/themes/<%= amsf.theme.new_name %>/includes/"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= amsf.base %>/themes/<%= amsf.theme.new_name %>/layouts/"
-            src: ["**"]
-            dest: "<%= config.app %>/_includes/themes/<%= amsf.theme.new_name %>/layouts/"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= amsf.base %>/themes/<%= amsf.theme.new_name %>/assets/"
-            src: ["**"]
-            dest: "<%= config.app %>/assets/themes/<%= amsf.theme.new_name %>/"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= amsf.base %>/themes/<%= amsf.theme.new_name %>/pages/"
-            src: ["**"]
-            dest: "<%= config.app %>/_pages/themes/<%= amsf.theme.new_name %>/"
-          }
-        ]
-
-      amsf__theme__to_cache:
-        files: [
-          {
-            src: ["<%= config.app %>/_data/<%= amsf.theme.current %>.yml"]
-            dest: "<%= amsf.base %>/themes/<%= amsf.theme.current %>/config.yml"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= config.app %>/_includes/themes/<%= amsf.theme.current %>/includes/"
-            src: ["**"]
-            dest: "<%= amsf.base %>/themes/<%= amsf.theme.current %>/includes/"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= config.app %>/_includes/themes/<%= amsf.theme.current %>/layouts/"
-            src: ["**"]
-            dest: "<%= amsf.base %>/themes/<%= amsf.theme.current %>/layouts/"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= config.app %>/assets/themes/<%= amsf.theme.current %>/"
-            src: ["**"]
-            dest: "<%= amsf.base %>/themes/<%= amsf.theme.current %>/assets/"
-          }
-          {
-            expand: true
-            dot: true
-            cwd: "<%= config.app %>/_pages/themes/<%= amsf.theme.current %>/"
-            src: ["**"]
-            dest: "<%= amsf.base %>/themes/<%= amsf.theme.current %>/pages/"
           }
         ]
 
@@ -498,14 +460,6 @@ module.exports = (grunt) ->
           "<%= amsf.theme.assets %>/js/"
           "<%= amsf.user.assets %>/css/"
           "<%= amsf.user.assets %>/js/"
-        ]
-
-      amsf__theme__cleanup:
-        src: [
-          "<%= copy.amsf__theme__to_cache.files.1.cwd %>"
-          "<%= copy.amsf__theme__to_cache.files.2.cwd %>"
-          "<%= copy.amsf__theme__to_cache.files.3.cwd %>"
-          "<%= copy.amsf__theme__to_cache.files.4.cwd %>"
         ]
 
     cleanempty:
@@ -592,21 +546,25 @@ module.exports = (grunt) ->
 
   grunt.registerTask "test", "Build test task", [
     "build"
+    "theme-add"
+    "theme-update"
+    "theme-save"
+    "amsf-update"
   ]
 
   grunt.registerTask "theme-upgrade", "Upgrade specific theme from AMSF cache to app", [
-    "copy:amsf__theme__to_app"
+    "shell:amsf__theme__to_app"
   ]
 
   grunt.registerTask "theme-save", "Save current (previously activated) theme to AMSF cache", ->
     if grunt.option("dev")
       grunt.task.run [
-        "copy:amsf__theme__to_cache"
+        "shell:amsf__theme__to_cache"
         "shell:amsf__theme__to_dev_repo"
       ]
     else
       grunt.task.run [
-        "copy:amsf__theme__to_cache"
+        "shell:amsf__theme__to_cache"
       ]
 
   grunt.registerTask "theme-activate", "Activate specific theme", [
@@ -624,7 +582,6 @@ module.exports = (grunt) ->
     "gitreset:amsf__theme__reset_git"
     "gitclean:amsf__theme__clean_git"
     "gitpull:amsf__theme__update_remote"
-    "clean:amsf__theme__cleanup"
     "theme-upgrade"
   ]
 
@@ -654,6 +611,7 @@ module.exports = (grunt) ->
     "jekyll:dist"
     "concurrent:dist"
     "assets_inline"
+    "cacheBust"
     "usebanner"
     "cleanempty"
   ]
