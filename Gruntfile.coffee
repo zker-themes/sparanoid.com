@@ -237,6 +237,7 @@ module.exports = (grunt) ->
         inlineSvg: true
         inlineSvgBase64: false
         assetsUrlPrefix: "<%= config.base %>/assets/"
+        deleteOriginals: true
 
       dist:
         files: [
@@ -599,6 +600,11 @@ module.exports = (grunt) ->
         "gitclone:amsf__core__add_remote"
         "copy:amsf__core__to_app"
       ]
+
+  grunt.registerTask "update", "Update AMSF and the activated theme", [
+    "amsf-update"
+    "theme-update"
+  ]
 
   grunt.registerTask "build", "Build site with jekyll", [
     "clean:default"
