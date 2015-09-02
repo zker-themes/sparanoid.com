@@ -6,7 +6,7 @@ category: note
 
 If you're using CloudFront to serve your website, here's some tips that can help reduce the cost.
 
-Here's a sample of my deploy script:
+Here's a output sample of my deploy script:
 
 ```sh
 $ make
@@ -22,7 +22,7 @@ The invalidation price will be high if you like me, deploy sites via git hooks s
 
 > File hashes to the rescue.
 
-Here's a optimized deploy script:
+Here's another output sample of optimized deploy script:
 
 ```sh
 $ make
@@ -36,6 +36,6 @@ $ make
 [info] Summary: Created 3 files. Deleted 3 files. Transferred 15.2 kB, 8.2 kB/s.
 ```
 
-There's no invalidation anymore, The cost of invalidation requests is first 1,000 paths free, then $0.005 per path[^1]. For example if you deploy your sites for client preview, let's say 20 there're 10 deploys per day with an average of 20 files (CSS, scripts and images) per deploy, all done automatically via git hooks. You will have 200 invalidations per day. 1000 for five days then you'll run out of free tier. you have to pay $5 per 1000 request if you continue requesting invalidations.
+There's no invalidation anymore, The cost of invalidation requests is first 1,000 paths free, then $0.005 per path. For example if you deploy your sites for client preview, let's say 20 there're 10 deploys per day with an average of 20 files (CSS, scripts and images) per deploy, all done automatically via git hooks. You will have 200 invalidations per day. 1000 for five days then you'll run out of free tier. you have to pay $5 per 1000 request if you continue requesting invalidations.
 
 So in my [current setup](http://sparanoid.com/lab/amsf/), I use [grunt-cache-bust](https://github.com/hollandben/grunt-cache-bust) to hash files. All file references will be updated automatically via Grunt task.
