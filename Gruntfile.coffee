@@ -91,7 +91,7 @@ module.exports = (grunt) ->
         files: ["<%= config.app %>/**/*", "!_*", "_config*.yml"]
         tasks: [
           "jekyll:serve"
-          "leading_quotes"
+          "newer:leading_quotes"
         ]
 
     uglify:
@@ -144,14 +144,14 @@ module.exports = (grunt) ->
           map:
             inline: false
           processors: [
-            require("autoprefixer-core")(browsers: "last 1 versions")
+            require("autoprefixer")(browsers: "last 1 versions")
           ]
 
       dist:
         src: "<%= postcss.serve.src %>"
         options:
           processors: [
-            require("autoprefixer-core")(browsers: "last 2 versions")
+            require("autoprefixer")(browsers: "last 2 versions")
           ]
 
     csscomb:
@@ -257,7 +257,7 @@ module.exports = (grunt) ->
         class: "leading-indent-fix"
         verbose: true
 
-      default:
+      main:
         files: [
           expand: true
           cwd: "<%= config.dist %>"
@@ -320,6 +320,12 @@ module.exports = (grunt) ->
       # Auto commit untracked files sync'ed from sync_local
       sync_commit:
         command: "sh <%= config.deploy.s3_website.dest %>/auto-commit"
+
+      amsf__core__update_deps:
+        command: [
+          "bundle install"
+          "npm install"
+        ].join("&&")
 
       amsf__theme__to_app:
         command: [
@@ -470,7 +476,7 @@ module.exports = (grunt) ->
           cwd: "<%= gitpull.amsf__theme__update_remote.options.cwd %>"
 
     clean:
-      default:
+      main:
         src: [
           ".tmp"
           "<%= config.dist %>"
@@ -598,26 +604,31 @@ module.exports = (grunt) ->
       ]
     grunt.task.run [
       "copy:amsf__core__to_app"
+      "shell:amsf__core__update_deps"
     ]
 
   grunt.registerTask "serve", "Fire up a server on local machine for development", [
-    "clean:default"
+    "clean:main"
     "copy:serve"
     "less:serve"
     "postcss:serve"
     "jekyll:serve"
-    "leading_quotes:default"
+    "leading_quotes:main"
     "browserSync"
     "watch"
   ]
 
-  grunt.registerTask "test", "Build test task", [
-    "build"
-    "theme-add"
-    "theme-update"
-    "theme-save"
-    "amsf-update"
-  ]
+  grunt.registerTask "test", "Build test task", ->
+    grunt.task.run [
+      "build"
+    ]
+    if !grunt.option("local")
+      grunt.task.run [
+        "theme-add"
+        "theme-update"
+        "theme-save"
+        "amsf-update"
+      ]
 
   grunt.registerTask "update", "Update AMSF and the activated theme", [
     "amsf-update"
@@ -625,7 +636,7 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask "build", "Build site with jekyll", [
-    "clean:default"
+    "clean:main"
     "coffeelint"
     "uglify"
     "lesslint"
@@ -633,7 +644,7 @@ module.exports = (grunt) ->
     "postcss:dist"
     "csscomb"
     "jekyll:dist"
-    "leading_quotes:default"
+    "leading_quotes:main"
     "concurrent:dist"
     "assets_inline"
     "cacheBust"
