@@ -8,7 +8,7 @@ thumb: corner-bracket-lover-thumb.png
 svg-headline: svg/corner-bracket-lover.svg
 svg-headline-width: 500
 svg-headline-height: 46
-link: http://wordpress.org/extend/plugins/corner-bracket-lover/
+link: http://wordpress.org/plugins/corner-bracket-lover/
 scheme-text: "#a48cd3"
 scheme-link: "#cabce5"
 scheme-hover: "#fff"

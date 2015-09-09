@@ -8,7 +8,7 @@ thumb: disable-wysiwyg-thumb.png
 svg-headline: svg/disable-wysiwyg.svg
 svg-headline-width: 581
 svg-headline-height: 70
-link: http://wordpress.org/extend/plugins/disable-wysiwyg/
+link: http://wordpress.org/plugins/disable-wysiwyg/
 scheme-text: "#cb3920"
 scheme-link: "#f00"
 scheme-hover: "#ff7a00"

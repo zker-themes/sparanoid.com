@@ -8,7 +8,7 @@ thumb: instagram-badges-thumb.png
 svg-headline: svg/instagram-badges.svg
 svg-headline-width: 500
 svg-headline-height: 76
-link: http://wordpress.org/extend/plugins/instagram-badges/
+link: http://wordpress.org/plugins/instagram-badges/
 scheme-text: "#3f729b"
 scheme-link: "#20262b"
 scheme-hover: "#5299d2"

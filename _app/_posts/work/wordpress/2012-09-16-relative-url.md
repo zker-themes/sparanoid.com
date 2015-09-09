@@ -8,7 +8,7 @@ thumb: relative-url-thumb.png
 svg-headline: svg/relative-url.svg
 svg-headline-width: 500
 svg-headline-height: 73
-link: http://wordpress.org/extend/plugins/relative-url/
+link: http://wordpress.org/plugins/relative-url/
 scheme-text: "#00fff0"
 scheme-link: "#00706c"
 scheme-hover: "#fff"
