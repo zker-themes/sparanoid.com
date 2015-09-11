@@ -29,10 +29,12 @@ Here's a part of my `s3_website.yml` config:
 ```yaml
 s3_bucket: sparanoid.com
 max_age:
-  "*.css":   31536000
-  "*.js":    31536000
-  "*.woff2": 31536000
-  "*": 300
+  "index.html": 600
+  "*.css":      2592000
+  "*.js":       2592000
+  "*.jpg":      31536000
+  "*.woff2":    31536000
+  "*":          86400
 ```
 
 You can also define the files to be ignored:
