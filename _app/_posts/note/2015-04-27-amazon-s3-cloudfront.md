@@ -71,6 +71,20 @@ Then redirect `/feed/` to `/feed.xml` in AWS web console:
 </RoutingRules>
 ```
 
+Update Sep 11, 2015: actually you can define routing rules directly in `s3_website.yml`:
+
+```yaml
+routing_rules:
+  - condition:
+      key_prefix_equals: feed/
+    redirect:
+      host_name: sparanoid.com
+      replace_key_prefix_with: feed.xml
+      http_redirect_code: 301
+```
+
+Then run `s3_website cfg apply` to update redirects.
+
 ### Redirect www to non-www
 
 You have to create an empty separate S3 bucket and redirect all requests to your root domain. Refer [official documentation](http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html#root-domain-walkthrough-s3-tasks). This can be set under your bucket properties panel.
