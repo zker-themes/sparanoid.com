@@ -141,3 +141,9 @@ If everything is right you will get the following response:
 ```
 
 Then you can enable the Custom SSL Certificate stored in your AWS IAM from the web console.
+
+Note: The size of the public key in the SSL certificate cannot exceed 2048 bits.
+
+### Update SSL Certificate
+
+If the certificate you're using is expiring, you need first upload the new certificate with a different `server-certificate-name`, change the expiring certificate to the new one, then you can optionally remove the old certificate with `aws iam delete-server-certificate`. You can also list all existing certificates via `aws iam list-server-certificate`.
