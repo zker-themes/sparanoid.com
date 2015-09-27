@@ -2,7 +2,6 @@
 [![Build Status](https://travis-ci.org/sparanoid/sparanoid.com.svg)](https://travis-ci.org/sparanoid/sparanoid.com)
 [![devDependency Status](https://david-dm.org/sparanoid/sparanoid.com/dev-status.svg)](https://david-dm.org/sparanoid/sparanoid.com#info=devDependencies)
 [![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](http://sparanoid.com/lab/amsf/)
-[![Deployment status from DeployBot](https://sparanoid.deploybot.com/badge/13023224003344/43717.svg)](http://deploybot.com)
 
 [Jekyll](https://github.com/jekyll/jekyll) running on [sparanoid.com](http://sparanoid.com/).
 
