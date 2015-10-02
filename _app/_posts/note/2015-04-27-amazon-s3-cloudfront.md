@@ -142,8 +142,15 @@ If everything is right you will get the following response:
 
 Then you can enable the Custom SSL Certificate stored in your AWS IAM from the web console.
 
-Note: The size of the public key in the SSL certificate cannot exceed 2048 bits.
+Notes:
+
+- The size of the public key in the SSL certificate cannot exceed 2048 bits [^1].
+- As of October of 2015, you still can't use ECC certificate (ECDSA cipher suites) for CloudFront [^2].
 
 ### Update SSL Certificate
 
 If the certificate you're using is expiring, you need first upload the new certificate with a different `server-certificate-name`, change the expiring certificate to the new one, then you can optionally remove the old certificate with `aws iam delete-server-certificate`. You can also list all existing certificates via `aws iam list-server-certificate`.
+
+[^1]: See "Determining the Size of the Public Key in an SSL Certificate" section in [Using an HTTPS Connection to Access Your Objects - Amazon CloudFront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html)
+
+[^2]: See "Encryption" in [Request and Response Behavior for Custom Origins - Amazon CloudFront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html)
