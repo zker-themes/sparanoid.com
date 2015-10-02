@@ -6,7 +6,7 @@ category: note
 
 (HTTP) Public Key Pinning (HPKP) allows websites to send an HTTP header instructing the browser to remember (or "pin") parts of its SSL certificate chain. The browser will then refuse subsequent connections that don’t match the pins that it has previously received.
 
-As of September of 2015, both Google Chrome and Mozilla Firefox of any modern platforms support HTTP Public Key Pinning. [^1] And Google Chrome supports HPKP reporting from the version 46. [^2]
+As of September of 2015, both Google Chrome and Mozilla Firefox of any modern platforms support HTTP Public Key Pinning [^1]. And Google Chrome supports HPKP reporting from the version 46 [^2].
 
 ## Creating Pin Hashes
 
@@ -55,7 +55,7 @@ You can also see if Public Key Pinning is enabled from Web Inspector in Mozilla 
 
 ## HPKP Reporting
 
-At the time of writing, Google Chrome already supports HPKP reporting, tou can test it with a report only header and a fake primary pin, I recommend [RequestBin](http://requestb.in/) for collecting requests:
+At the time of writing, Google Chrome already supports HPKP reporting, so can test it with a report-only header and a fake primary pin, I recommend [RequestBin](http://requestb.in/) for collecting requests:
 
 ```nginx
 add_header Public-Key-Pins-Report-Only 'pin-sha256="FAKE"; pin-sha256="EFGI"; max-age=86400; report-uri="http://requestb.in/onk0wkon"';
