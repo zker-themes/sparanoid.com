@@ -268,6 +268,10 @@ module.exports = (grunt) ->
     cacheBust:
       options:
         encoding: "utf8"
+        filters: {
+          "link[rel*=icon]": ->
+            @attribs.href
+        }
         algorithm: "md5"
         length: 8
         deleteOriginals: true
@@ -296,7 +300,7 @@ module.exports = (grunt) ->
 
       serve:
         options:
-          config: "_config.yml,_amsf/_config.yml,<%= config.app %>/_data/<%= amsf.theme.current %>.yml,_config.dev.yml,_config.user.yml"
+          config: "_config.yml,_amsf/_config.yml,<%= config.app %>/_data/<%= amsf.theme.current %>.yml,_config.user.yml,_config.dev.yml"
           drafts: true
           future: true
 
@@ -319,10 +323,11 @@ module.exports = (grunt) ->
 
       # Auto commit untracked files sync'ed from sync_local
       sync_commit:
-        command: "sh <%= config.deploy.s3_website.dest %>/auto-commit"
+        command: "sh <%= config.deploy.s3_website.dest %>/auto-commit '<%= config.pkg.name %>'"
 
       amsf__core__update_deps:
         command: [
+          "bundle update"
           "bundle install"
           "npm install"
         ].join("&&")
