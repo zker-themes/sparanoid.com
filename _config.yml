@@ -133,4 +133,6 @@ credits:        false
 #   - "Disallow: /@async"
 #   - "Disallow: /log/"
 # Default:      "User-agent: *"
-robots:         "User-agent: *"
+robots:
+  - "User-agent: *"
+  - "Disallow: /lab/version/"
