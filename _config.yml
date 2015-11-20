@@ -43,6 +43,7 @@ kramdown:
   hard_wrap:                 false
   syntax_highlighter:        rouge
   transliterated_header_ids: true
+  footnote_backlink:         "&#8617;&#xfe0e;"
 
 redcarpet:
   extensions:
@@ -123,7 +124,7 @@ rss_excerpt:    false
 
 # Show generator credits
 # Default:      true
-credits:        false
+credits:        true
 
 # Items in robots.txt
 # For example:
@@ -133,6 +134,4 @@ credits:        false
 #   - "Disallow: /@async"
 #   - "Disallow: /log/"
 # Default:      "User-agent: *"
-robots:
-  - "User-agent: *"
-  - "Disallow: /lab/version/"
+robots:         "User-agent: *"

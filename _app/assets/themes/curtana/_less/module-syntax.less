@@ -164,4 +164,28 @@
   }
   .loop-comments(1);
 
+  // Reset code blocks appearance with line numbers
+  table {
+
+    &,
+    th,
+    td,
+    td pre {
+      padding: 0;
+      margin: 0;
+      border: none;
+      background: transparent;
+      font-size: 100%;
+    }
+
+    .lineno {
+      color: desaturate(@link-color, 95%);
+      opacity: .5;
+      user-select: none;
+    }
+
+    .code {
+      padding-left: 1em;
+    }
+  }
 }
