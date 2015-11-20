@@ -5,17 +5,15 @@ category: note
 link: http://github.com/sparanoid/chinese-copywriting-guidelines
 ---
 
-## 中文文案排版指北
+中文文案排版指北：統一中文文案、排版的相關用法，降低團隊成員之間的溝通成本，增強網站氣質。
 
-統一中文文案、排版的相關用法，降低團隊成員之間的溝通成本，增強網站氣質。
-
-### 空格
+## 空格
 
 「有研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛苦，有七成的比例會在 34 歲的時候跟自己不愛的人結婚，而其餘三成的人最後只能把遺產留給自己的貓。畢竟愛情跟書寫都需要適時地留白。
 
 與大家共勉之。」——[vinta/paranoid-auto-spacing](https://github.com/vinta/paranoid-auto-spacing)
 
-#### 中英文之間需要增加空格
+### 中英文之間需要增加空格
 
 正確：
 
@@ -33,7 +31,7 @@ link: http://github.com/sparanoid/chinese-copywriting-guidelines
 
 例外：「豆瓣FM」等產品名詞，按照官方所定義的格式書寫。
 
-#### 中文與數字之間需要增加空格
+### 中文與數字之間需要增加空格
 
 正確：
 
@@ -45,7 +43,7 @@ link: http://github.com/sparanoid/chinese-copywriting-guidelines
 
 > 今天出去買菜花了5000元。
 
-#### 數字與單位之間需要增加空格
+### 數字與單位之間需要增加空格
 
 正確：
 
@@ -69,7 +67,7 @@ link: http://github.com/sparanoid/chinese-copywriting-guidelines
 
 > 新 MacBook Pro 有 15 % 的 CPU 性能提升。
 
-#### 全形標點與其他字符之間不加空格
+### 全形標點與其他字符之間不加空格
 
 正確：
 
@@ -79,13 +77,13 @@ link: http://github.com/sparanoid/chinese-copywriting-guidelines
 
 > 剛剛買了一部 iPhone ，好開心！
 
-#### `-ms-text-autospace` to the rescue?
+### `-ms-text-autospace` to the rescue?
 
 Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/ie/ms531164(v=vs.85).aspx) 的 CSS 屬性可以實現自動為中英文之間增加空白。不過目前並未普及，另外在其他應用場景，例如 OS X、iOS 的用戶介面目前并不存在這個特性，所以請繼續保持隨手加空格的習慣。
 
-### 標點符號
+## 標點符號
 
-#### 不重複使用標點符號
+### 不重複使用標點符號
 
 正確：
 
@@ -103,11 +101,11 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 > 她竟然對你說「喵」？！？！？？！！
 
-### 全形和半形
+## 全形和半形
 
 不明白什麼是全形（全角）與半形（半角）符號？請查看維基百科詞條『[全形和半形](http://zh.wikipedia.org/wiki/%E5%85%A8%E5%BD%A2%E5%92%8C%E5%8D%8A%E5%BD%A2)』。
 
-#### 使用全形中文標點
+### 使用全形中文標點
 
 正確：
 
@@ -125,7 +123,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 > 核磁共振成像(NMRI)是什麼原理都不知道?JFGI!
 
-#### 數字使用半形字符
+### 數字使用半形字符
 
 正確：
 
@@ -137,7 +135,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 例外：在設計稿、宣傳海報中如出現極少量數字的情形時，為方便文字對齊，是可以使用全形數字的。
 
-#### 遇到完整的英文整句、特殊名詞，其內容使用半形標點
+### 遇到完整的英文整句、特殊名詞，其內容使用半形標點
 
 正確：
 
@@ -151,9 +149,9 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 > 推薦你閱讀『Hackers＆Painters：Big Ideas from the Computer Age』，非常的有趣。
 
-### 名詞
+## 名詞
 
-#### 專有名詞使用正確的大小寫
+### 專有名詞使用正確的大小寫
 
 大小寫相關用法原屬於英文書寫範疇，不屬於本 wiki 討論內容，在這裡只對部分易錯用法進行簡述。
 
@@ -187,7 +185,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 注意：當網頁中需要配合整體視覺風格而出現全部大寫／小寫的情形，HTML 中請使用標準的大小寫規範進行書寫；並通過 `text-transform: uppercase;`／`text-transform: lowercase;` 對表現形式進行定義。
 
-#### 不要使用不地道的縮寫
+### 不要使用不地道的縮寫
 
 正確：
 
@@ -197,11 +195,11 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 > 我們需要一位熟悉 Js、h5，至少理解一种框架（如 backbone、angular、RJS 等）的 FED。
 
-### 爭議
+## 爭議
 
 以下用法略帶有個人色彩，既：無論是否遵循下述規則，從語法的角度來講都是**正確**的。
 
-#### 中文鏈接之間增加空格
+### 中文鏈接之間增加空格
 
 用法：
 
@@ -215,7 +213,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 > 訪問我們網站的最新動態，請[點擊這裡](#)進行訂閱！
 
-#### 簡體中文使用直角引號
+### 簡體中文使用直角引號
 
 用法：
 
@@ -225,7 +223,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 
 > “老师，‘有条不紊’的‘紊’是什么意思？”
 
-### 工具
+## 工具
 
 倉庫 | 語言
 --- | ---
@@ -237,7 +235,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 [hotoo/pangu.vim](https://github.com/hotoo/pangu.vim) | Vim
 [sparanoid/grunt-auto-spacing](https://github.com/sparanoid/grunt-auto-spacing) | Node.js (Grunt)
 
-### 誰在這樣做？
+## 誰在這樣做？
 
 網站 | 文案 | UGC
 --- | --- | ---
@@ -256,7 +254,7 @@ Microsoft 有個 [`-ms-text-autospace`](http://msdn.microsoft.com/en-us/library/
 [Ruby China](http://ruby-china.org/) | Yes | 標題達成
 [PHPHub](http://phphub.org/) | Yes | 標題達成
 
-### 參考文獻
+## 參考文獻
 
 - [來自 About.com 的大小寫用法（英文）](http://grammar.about.com/od/punctuationandmechanics/a/Guidelines-For-Using-Capital-Letters.htm)
 - [來自維基百科的關於大小寫字符的相關條目（英文）](http://en.wikipedia.org/wiki/Letter_case)
