@@ -39,7 +39,7 @@ max_age:
 
 You can also define the files to be ignored:
 
-```
+```yaml
 exclude_from_upload:
   - (?:\.(?:DS_Store|bak|config|sql|fla|psd|ai|sketch|ini|log|sh|inc|swp|dist))$
 ```
