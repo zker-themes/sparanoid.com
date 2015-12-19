@@ -14,7 +14,9 @@ Please note that this is not a detailed tutorial about how to host your website 
 
 There are two methods you can choose - host static files on Amazon S3 and speed up using CloudFront, or host your website on a remote server using CloudFront as custom origin proxy. Both of these have their pros and cons:
 
-Amazon S3 + CloudFront means you do not have to buy additional servers to host your website, but you have to do more work to ensure your website behaves the same as before. For example, you cannot use `/feed/` (`/feed/index.xml`) as your feed URL because you can set only one Document Index per bucket. If you're using `/feed/` then you have to redirect it to something similar to `feed.xml`. gzip is also not a native feature on S3. You have to compress it manually or use other tools (I will talk about it later).
+Amazon S3 + CloudFront means you do not have to buy additional servers to host your website, but you have to do more work to ensure your website behaves the same as before. For example, you cannot use `/feed/` (`/feed/index.xml`) as your feed URL because you can set only one Document Index per bucket. If you're using `/feed/` then you have to redirect it to something similar to `feed.xml`. Gzip is also not a native feature on S3. You have to compress it manually or use other tools (I will talk about it later).
+
+Update Dec 19, 2015: Amazon finally added [Gzip compression support for CloudFront](https://aws.amazon.com/blogs/aws/new-gzip-compression-support-for-amazon-cloudfront/). You can now simply turn on this feature in AWS console or via CLI.
 
 Using Amazon CloudFront with custom origin means you still need servers to store your files. You will have more control with your website, for example, you can use Nginx with complex redirects, your website can be dynamic, and CloudFront works just like a proxy. However, the downside is the cache control which can be tricky. You cannot use invalidation with the existing tools and you have to set separate cache control headers [`s-maxage`](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html) for CloudFront.
 
@@ -22,7 +24,7 @@ To make things simple, I use Amazon S3 with CloudFront.
 
 ### Move files to Amazon S3
 
-The easiest way is using [s3_website](https://github.com/laurilehmijoki/s3_website). It can help you to handle gzip, invalidations and redirects.
+The easiest way is using [s3_website](https://github.com/laurilehmijoki/s3_website). It can help you handle file headers, invalidations, and redirects.
 
 Here's a part of my `s3_website.yml` config:
 
