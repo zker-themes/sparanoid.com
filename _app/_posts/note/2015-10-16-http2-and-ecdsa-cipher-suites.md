@@ -4,7 +4,7 @@ title: HTTP/2 and ECDSA Cipher Suites
 category: note
 ---
 
-If you're using a ECC certificate with HTTP/2, you may get the following error from Google Chrome:
+If you're using an ECC certificate with HTTP/2, you may get the following error from Google Chrome:
 
 ```
 ERR_SPDY_INADEQUATE_TRANSPORT_SECURITY
