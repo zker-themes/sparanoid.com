@@ -5,7 +5,7 @@ permalink: /about/
 desc: 關於・について・Introduction
 ---
 
-Sparanoid is a one-man design studio operated by Tunghsiao Liu, currently located in China. You can ping me on [Twitter](http://twitter.com/tunghsiao) or send correspondence to [t@sparanoid.com](mailto:t@sparanoid.com).
+Sparanoid is a one-man design studio operated by Tunghsiao Liu. You can ping me on [Twitter](http://twitter.com/tunghsiao) or send correspondence to [t@sparanoid.com](mailto:t@sparanoid.com).
 
 ## Colophon
 
