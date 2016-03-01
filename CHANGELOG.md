@@ -1,3 +1,58 @@
+<a name="24.1.17"></a>
+## [24.1.17](https://github.com/sparanoid/sparanoid.com/compare/v24.1.16...v24.1.17) (2016-03-01)
+
+
+### Bug Fixes
+
+* **amsf:** theme not updated ([6250d19](https://github.com/sparanoid/sparanoid.com/commit/6250d19))
+* **config:** missing robots rule ([ae4d85e](https://github.com/sparanoid/sparanoid.com/commit/ae4d85e))
+* **gem:** oops ([0c88da0](https://github.com/sparanoid/sparanoid.com/commit/0c88da0))
+* **jekyll:** config accidently changed to AMSF default config ([cc6ffdb](https://github.com/sparanoid/sparanoid.com/commit/cc6ffdb))
+* **post:** grammar error in “HTTP/2 and ECDSA Cipher Suites” ([004a56b](https://github.com/sparanoid/sparanoid.com/commit/004a56b))
+* **post:** looong word not wrapped ([b883ba9](https://github.com/sparanoid/sparanoid.com/commit/b883ba9))
+* **post:** minor tweaks ([a455894](https://github.com/sparanoid/sparanoid.com/commit/a455894))
+* **post:** missing highlighter language for “Amazon S3 × CloudFront” ([38ec802](https://github.com/sparanoid/sparanoid.com/commit/38ec802))
+* **post:** move post specific scripts to foot hook ([0cfd7bb](https://github.com/sparanoid/sparanoid.com/commit/0cfd7bb))
+* **post:** typo in “DMARC” ([ce6b6b8](https://github.com/sparanoid/sparanoid.com/commit/ce6b6b8))
+* **post:** wrong `openssl` protocol for “OCSP Stapling and Nginx” ([d99a954](https://github.com/sparanoid/sparanoid.com/commit/d99a954))
+* **post:** wrong link in “DMARC” ([36525a2](https://github.com/sparanoid/sparanoid.com/commit/36525a2))
+* **post:** wrong thumbnail for “Slimpack” ([5cfcb50](https://github.com/sparanoid/sparanoid.com/commit/5cfcb50))
+* **styles:** missing custom footnote decorations color ([48a9542](https://github.com/sparanoid/sparanoid.com/commit/48a9542))
+
+### Features
+
+* **config:** update records in `robots.txt` ([c56066d](https://github.com/sparanoid/sparanoid.com/commit/c56066d))
+* **docs:** update badges ([0513e6a](https://github.com/sparanoid/sparanoid.com/commit/0513e6a))
+* **feeds:** new feeds for Work and Note section for Apple News ([8c5cf8e](https://github.com/sparanoid/sparanoid.com/commit/8c5cf8e))
+* **post:** add cipher suites note for “Amazon S3 × CloudFront” ([78e1afd](https://github.com/sparanoid/sparanoid.com/commit/78e1afd))
+* **post:** add HTML version of “Chinese Copywriting Guidelines” ([0856a42](https://github.com/sparanoid/sparanoid.com/commit/0856a42))
+* **post:** add iTunes Store link ([04036a7](https://github.com/sparanoid/sparanoid.com/commit/04036a7))
+* **post:** add long-waiting “Public Key Pinning / HPKP Reporting” ([f797656](https://github.com/sparanoid/sparanoid.com/commit/f797656))
+* **post:** add more example for “DMARC” ([bc46e63](https://github.com/sparanoid/sparanoid.com/commit/bc46e63))
+* **post:** add new post “DMARC” ([776dfb4](https://github.com/sparanoid/sparanoid.com/commit/776dfb4))
+* **post:** add new post “HTTP/2 and ECDSA Cipher Suites” ([9959d9b](https://github.com/sparanoid/sparanoid.com/commit/9959d9b))
+* **post:** add new post “Slimpack” ([04cf4cf](https://github.com/sparanoid/sparanoid.com/commit/04cf4cf))
+* **post:** add updating SSL guide for “Amazon S3 × CloudFront” ([ba13ec5](https://github.com/sparanoid/sparanoid.com/commit/ba13ec5))
+* **post:** new post “CloudFront Cost Control” ([3d1d210](https://github.com/sparanoid/sparanoid.com/commit/3d1d210))
+* **post:** remove quotes ([4015be3](https://github.com/sparanoid/sparanoid.com/commit/4015be3))
+* **post:** update “Amazon S3 × CloudFront” ([5ffadf0](https://github.com/sparanoid/sparanoid.com/commit/5ffadf0))
+* **post:** update “OCSP Stapling and Nginx” ([02feb8d](https://github.com/sparanoid/sparanoid.com/commit/02feb8d))
+* **post:** update background for “Slimpack” ([6689032](https://github.com/sparanoid/sparanoid.com/commit/6689032))
+* **post:** update cache settings ([25e963a](https://github.com/sparanoid/sparanoid.com/commit/25e963a))
+* **post:** update CloudFront info for “Amazon S3 × CloudFront” ([945e962](https://github.com/sparanoid/sparanoid.com/commit/945e962))
+* **post:** update heading level for “Chinese Copywriting Guidelines” ([d028a8b](https://github.com/sparanoid/sparanoid.com/commit/d028a8b))
+* **post:** update screenshots for “Tianjin Project Revision” ([51e3f9c](https://github.com/sparanoid/sparanoid.com/commit/51e3f9c))
+* **post:** update URL for “DOLLARS Chat Room” ([0eaa5de](https://github.com/sparanoid/sparanoid.com/commit/0eaa5de))
+* **post:** use English version for “Chinese Copywriting Guidelines” ([bc34c04](https://github.com/sparanoid/sparanoid.com/commit/bc34c04))
+* **style:** minor tweak ([206c072](https://github.com/sparanoid/sparanoid.com/commit/206c072))
+* **style:** wider images for large screens ([ca5a60b](https://github.com/sparanoid/sparanoid.com/commit/ca5a60b))
+* **styles:** add missing variables ([a40a48a](https://github.com/sparanoid/sparanoid.com/commit/a40a48a))
+* **styles:** update font stack order ([1c22c58](https://github.com/sparanoid/sparanoid.com/commit/1c22c58))
+* **styles:** update text decoration ([b9e58bd](https://github.com/sparanoid/sparanoid.com/commit/b9e58bd))
+* **template:** update favicon ([d14da78](https://github.com/sparanoid/sparanoid.com/commit/d14da78))
+
+
+
 <a name="24.1.16"></a>
 ## [24.1.16](https://github.com/sparanoid/sparanoid.com/compare/v24.1.15...v24.1.16) (2015-08-26)
 
