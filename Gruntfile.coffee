@@ -267,25 +267,18 @@ module.exports = (grunt) ->
 
     cacheBust:
       options:
-        encoding: "utf8"
-        filters: {
-          "link[rel*=icon]": ->
-            @attribs.href
-        }
-        ignorePatterns: [
-          "no-cache-bust"
-        ]
         algorithm: "md5"
-        length: 8
+        assets: ["<%= amsf.user.assets %>/**/*"]
+        baseDir: "<%= config.dist %>"
         deleteOriginals: true
+        encoding: "utf8"
+        length: 8
 
       dist:
         files: [
           expand: true
-          baseDir: "<%= config.dist %>"
           cwd: "<%= config.dist %>"
           src: "**/*.html"
-          dest: "<%= config.dist %>"
         ]
 
     usebanner:
@@ -318,7 +311,7 @@ module.exports = (grunt) ->
 
       # Direct sync compiled static files to remote server
       sync_server:
-        command: "rsync -avz --delete --progress <%= config.deploy.ignore_files %> <%= config.dist %>/ <%= config.deploy.sftp.host %>:<%= config.deploy.sftp.dest %> > rsync-sftp.log"
+        command: "rsync -avz -e 'ssh -p <%= config.deploy.sftp.port %>' --delete --progress <%= config.deploy.ignore_files %> <%= config.dist %>/ <%= config.deploy.sftp.user %>@<%= config.deploy.sftp.host %>:<%= config.deploy.sftp.dest %> > rsync-sftp.log"
 
       # Copy compiled static files to local directory for further post-process
       sync_local:
