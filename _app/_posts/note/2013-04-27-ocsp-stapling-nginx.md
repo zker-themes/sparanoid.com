@@ -36,7 +36,7 @@ ssl_stapling_verify     on;
 Reload nginx to validate if OCSP Stapling is working:
 
 ```sh
-$ openssl s_client -connect sparanoid.com:443 -tls1_1 -tlsextdebug -status
+$ openssl s_client -connect sparanoid.com:443 -tls1_2 -tlsextdebug -status
 ```
 
 ### The Problem
