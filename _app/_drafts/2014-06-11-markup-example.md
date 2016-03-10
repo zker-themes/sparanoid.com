@@ -2,7 +2,7 @@
 layout: post
 title: Markup Example
 category: note
-plugin: intense
+plugin: lightense
 hidden: true
 ---
 

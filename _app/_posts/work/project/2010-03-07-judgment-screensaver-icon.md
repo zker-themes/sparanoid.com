@@ -5,13 +5,12 @@ category: work
 tag: project
 excerpt: Based on Toaru Kagaku no Railgun「とある科学の超電磁砲」
 thumb: judgment-screensaver-icon.png
-plugin: slider
 scheme-text: "#fff"
 scheme-link: "#9ed8d8"
 scheme-hover: "#fff"
 scheme-code: "#39beb6"
 scheme-bg: "#317979"
-plugin: intense
+plugin: lightense
 ---
 
 <p>Antiskill <i>&amp;</i> Judgment Section 177 screensaver and icons, auto-scale screensaver tested up to 2560 &times; 1600.</p>

@@ -10,7 +10,7 @@ scheme-link: "#ffbdbd"
 scheme-hover: "#ffd18c"
 scheme-code: "#24ebdb"
 scheme-bg: "#f1504d"
-plugin: intense
+plugin: lightense
 ---
 
 <p><img src="{{ site.file }}/monolite-plus-04.jpg" alt="MonoLite Plus"></p>

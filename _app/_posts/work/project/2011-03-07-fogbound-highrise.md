@@ -5,7 +5,7 @@ category: work
 tag: project
 excerpt: The 15th version of sparanoid.com, featuring Jekyll
 thumb: fogbound-highrise.png
-plugin: intense
+plugin: lightense
 ---
 
 <p class="browser"><img src="{{ site.file }}/fogbound-highrise-screenshot-large.png"></p>

@@ -5,7 +5,7 @@ category: work
 tag: drawing
 excerpt: Another Alley [Mod]
 thumb: another-alley-mod.jpg
-plugin: intense
+plugin: lightense
 ---
 
 <p><img src="{{ site.file }}/work/another-alley-mod.jpg" alt="Another Alley [Mod]"></p>
