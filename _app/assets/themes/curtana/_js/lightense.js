@@ -39,11 +39,9 @@ var Lightense = (function() {
   }
 
   function track (element) {
-    // Apply zoom-in cursor for target images
-    element.style.cursor = 'zoom-in';
-
     // Element needs a src at minumun
     if (element.getAttribute('data-image') || element.src) {
+      element.style.cursor = 'zoom-in';
       element.addEventListener('click', function () {
         init(this);
       }, false);
@@ -67,6 +65,7 @@ var Lightense = (function() {
     var containerProperties = {
       'backgroundColor': background,
       'display': 'flex',
+      'boxSizing': 'border-box',
       'flexDirection': 'column',
       'justifyContent': 'center',
       'width': '100%',
@@ -90,8 +89,12 @@ var Lightense = (function() {
 
     var imageProperties = {
       'display': 'block',
+      'width': 'auto',
+      'height': 'auto',
       'maxWidth': '100%',
       'maxHeight': '100%',
+      'minWidth': '0',
+      'minHeight': '0',
       'padding': '0',
       'margin': '0 auto'
     };
