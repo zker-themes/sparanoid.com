@@ -11,7 +11,7 @@ svg-headline-height: 125
 plugin: lightense
 ---
 
-<p class="note">There&rsquo;s a <a href="/work/tianjin-project-revision/">newer revision</a> of this project.</p>
+<p class="note">There's a <a href="/work/tianjin-project-revision/">newer revision</a> of this project.</p>
 
 <p><a href="/work/tianjin-project/">Tianjin Project</a> is now featured on the World Economic Forum (WEF) - Tianjin Davos 2012. Created using iBooks Author, for iPad only.</p>
 

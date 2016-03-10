@@ -12,7 +12,7 @@ link: /lab/tianjin/
 plugin: lightense
 ---
 
-<p class="note">There&rsquo;s a <a href="/work/tianjin-project-revision/">newer revision</a> of this project.</p>
+<p class="note">There's a <a href="/work/tianjin-project-revision/">newer revision</a> of this project.</p>
 
 <p class="note">Now this project is featured on <a href="/work/tianjin-project-wef/">The World Economic Forum - Tianjin Davos 2012</a>. You can also check out the <a href="/lab/tianjin/">project page</a>.</p>
 
