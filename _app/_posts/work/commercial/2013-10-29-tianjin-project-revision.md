@@ -6,7 +6,7 @@ tag: commercial
 plugin: lightense
 ---
 
-This is just another revision for the original <a href="{% post_url /work/commercial/2012-06-11-tianjin-project %}">Tianjin Project</a>, optimized for recently introduced iBooks for OS X. I also redesigned a new cover for it.
+This is just another revision for the original <a href="/work/tianjin-project/">Tianjin Project</a>, optimized for recently introduced iBooks for OS X. I also redesigned a new cover for it.
 
 <p class="download">
   <a href="https://itunes.apple.com/us/book/tianjin/id1050471618?mt=13">Read it on your Mac</a>.
@@ -36,4 +36,4 @@ This is just another revision for the original <a href="{% post_url /work/commer
 <h2>Study Cards</h2>
 <p class="screenshot-mac"><img src="{{ site.file }}/tianjin-revision-el-capitan-08.jpg" alt="Study Cards"></p>
 
-<p class="note">You can also view the <a href="{% post_url /work/commercial/2012-06-11-tianjin-project %}">original version</a> of this project.</p>
+<p class="note">You can also view the <a href="/work/tianjin-project/">original version</a> of this project.</p>

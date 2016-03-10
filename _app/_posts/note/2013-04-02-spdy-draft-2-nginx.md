@@ -4,7 +4,7 @@ title: SPDY Draft 2 and Nginx
 category: note
 ---
 
-I've already [deployed SPDY]({% post_url /note/2012-10-12-playing-with-spdy-draft-2 %}) back in September, 2012. Now I'd like to share how to setup SPDY and OpenSSL on CentOS with you.
+I've already [deployed SPDY](/note/playing-with-spdy-draft-2/) back in September, 2012. Now I'd like to share how to setup SPDY and OpenSSL on CentOS with you.
 
 SPDY has a dependency with OpenSSL, and you also need the latest OpenSSL, the latest version is 1.0.1e as I wrote this post.
 

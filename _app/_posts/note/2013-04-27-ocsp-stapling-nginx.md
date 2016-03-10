@@ -4,7 +4,7 @@ title: OCSP Stapling and Nginx
 category: note
 ---
 
-I've already [deployed OCSP Stapling]({% post_url /note/2012-11-04-playing-with-ocsp-stapling %}) back in November, 2012. Now I'd like to share how to setup OCSP Stapling on CentOS with you.
+I've already [deployed OCSP Stapling](/note/playing-with-ocsp-stapling/) back in November, 2012. Now I'd like to share how to setup OCSP Stapling on CentOS with you.
 
 Configurate OCSP for sparanoid.com. Get your current SSL certificates chain order:
 

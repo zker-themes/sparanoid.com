@@ -4,7 +4,7 @@ title: Ansible Advanced lineinfile
 category: note
 ---
 
-[Ansible is great]({% post_url /note/2015-05-19-ansible %}), it's really simple to setup and easy to use. There are still some hidden tricks that can make your workflow more efficient.
+[Ansible is great](/note/ansible/), it's really simple to setup and easy to use. There are still some hidden tricks that can make your workflow more efficient.
 
 I was setting up new machines with PHP-FPM support. I'd like to change several FPM parameters using Ansible, you can copy (transfer) the whole configurations from your Ansible task to remote machines via `synchronize` or `template`, it's fast but you can't handle config changes from program updates. So my idea is dynamically replace the parameters I want to change via `lineinfile`:
 
