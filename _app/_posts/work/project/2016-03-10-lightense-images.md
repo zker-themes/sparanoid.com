@@ -3,6 +3,12 @@ layout: post
 title: Lightense Images
 category: work
 tag: project
+scheme-text: "#3b1599"
+scheme-link: "#ff3f00"
+scheme-hover: "#ff6300"
+scheme-code: "#ff65d2"
+scheme-bg: "#dbf5ff"
+scheme-bg-light: true
 plugin: lightense
 hidden: true
 ---
@@ -39,7 +45,7 @@ This library is mainly used by [Almace Scaffolding](/lab/almace-scaffolding/).
 <img src="screenshot.png" data-background="rgba(0, 0, 0, .96)">
 ```
 
-<p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(236, 246, 255, 0.8)"></p>
+<p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(255, 242, 251, .8)"></p>
 
 ## Arbitrary Elements
 
