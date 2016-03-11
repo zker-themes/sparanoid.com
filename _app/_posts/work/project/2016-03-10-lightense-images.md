@@ -50,7 +50,7 @@ This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 ## Arbitrary Elements
 
 ```html
-<p>Enter the CVV number <a class="lightense" data-image="card.jpg">on your credit card</a</p>>.
+<p>Enter the CVV number <a class="lightense" data-image="card.jpg">on your credit card</a></p>.
 <script>
   window.addEventListener('load', function () {
     var el = document.querySelectorAll('.lightense');
