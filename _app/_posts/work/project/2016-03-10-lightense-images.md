@@ -15,7 +15,7 @@ hidden: true
 
 A dependency-free pure JavaScript image lightbox library less than 2 KB (not gzipped!). Inspired by [tholman/intense-images](https://github.com/tholman/intense-images).
 
-This library is mainly used by [Almace Scaffolding](/lab/almace-scaffolding/).
+This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 
 ## Features
 
