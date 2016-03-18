@@ -45,7 +45,7 @@ This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 <img src="screenshot.png" data-background="rgba(0, 0, 0, .96)">
 ```
 
-<p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(255, 242, 251, .8)"></p>
+<p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(0, 10, 45, .6)"></p>
 
 ## Arbitrary Elements
 
