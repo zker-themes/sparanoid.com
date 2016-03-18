@@ -5,4 +5,4 @@ category: note
 link: http://www.v2ex.com/t/40433?r=sparanoid
 ---
 
-<p>Some Chinese designers are <a href="http://bbs.ui.cn/thread-30389-1-1.html">selling</a> their Dribbble invites for about $235 (1500 CNY in China). I’m really amazed. So I decide to giveaway one Dribbble invite for you guys who are still looking for it... for FREE!</p>
+Some Chinese designers are [selling](https://web.archive.org/web/20141230173723/http://bbs.ui.cn/thread-30389-1-1.html) their Dribbble invites for about $235 (1500 CNY in China). I'm really amazed. So I decide to giveaway one Dribbble invite for you guys who are still looking for it... for FREE!
