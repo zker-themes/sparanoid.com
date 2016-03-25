@@ -13,7 +13,7 @@ plugin: lightense
 hidden: true
 ---
 
-A dependency-free pure JavaScript image lightbox library less than 2 KB (not gzipped!). Inspired by [tholman/intense-images](https://github.com/tholman/intense-images).
+A dependency-free pure JavaScript image zooming library less than 2 KB (gzipped). Inspired by [fat/zoom.js](https://github.com/fat/zoom.js) and [tholman/intense-images](https://github.com/tholman/intense-images).
 
 This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 
@@ -22,13 +22,13 @@ This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 - High performance
 - One script, no additional dependencies, no bloated styles
 - Safari `backdrop-filter` support
-- 1 KB gzipped
+- 1.5 KB gzipped
 
 ## Setup
 
 ```html
-<script src="lightense.js"></script>
 <img src="photo.jpg">
+<script src="lightense.js"></script>
 <script>
   window.addEventListener('load', function () {
     var el = document.querySelectorAll('img');
@@ -46,20 +46,6 @@ This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 ```
 
 <p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(0, 10, 45, .6)"></p>
-
-## Arbitrary Elements
-
-```html
-<p>Enter the CVV number <a class="lightense" data-image="card.jpg">on your credit card</a></p>.
-<script>
-  window.addEventListener('load', function () {
-    var el = document.querySelectorAll('.lightense');
-    Lightense(el);
-  }, false);
-</script>
-```
-
-Enter the CVV number <a class="lightense" data-image="{{ site.file }}/fun/shut-up-and-take-my-money-nichijou.jpg">on your credit card</a>.
 
 ## Disable Lightense for Specific Elements
 
