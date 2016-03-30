@@ -22,7 +22,7 @@ This library is mainly used by [Almace Scaffolding](/lab/amsf/).
 - High performance
 - One script, no additional dependencies, no bloated styles
 - Safari `backdrop-filter` support
-- 1.5 KB gzipped
+- 2 KB gzipped
 
 ## Setup
 
