@@ -3,15 +3,13 @@
 [![devDependency Status](https://david-dm.org/sparanoid/sparanoid.com/dev-status.svg)](https://david-dm.org/sparanoid/sparanoid.com#info=devDependencies)
 [![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](http://sparanoid.com/lab/amsf/)
 
-[Jekyll](https://github.com/jekyll/jekyll) running on [sparanoid.com](http://sparanoid.com/).
+[Almace Scaffolding](http://github.com/sparanoid/almace-scaffolding/) running on [sparanoid.com](http://sparanoid.com/).
 
 ## Setup
 
 ```sh
 $ bundle install && npm install && grunt serve
 ```
-
-This site is built by [Almace Scaffolding](http://github.com/sparanoid/almace-scaffolding/).
 
 ## Author
 
