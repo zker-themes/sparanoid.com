@@ -1,3 +1,27 @@
+<a name="24.1.18"></a>
+## [24.1.18](https://github.com/sparanoid/sparanoid.com/compare/v24.1.17...v24.1.18) (2016-06-02)
+
+
+### Bug Fixes
+
+* **post:** single quotes for title “‘Free’ Dribbble Invite” ([e2c4f2f](https://github.com/sparanoid/sparanoid.com/commit/e2c4f2f))
+* **post:** wrong link in “Lightense Images” ([d2dd664](https://github.com/sparanoid/sparanoid.com/commit/d2dd664))
+* **post:** wrong syntax in code example in “Lightense Images” ([da95392](https://github.com/sparanoid/sparanoid.com/commit/da95392))
+* **post:** wrong thumbnail for “Almace Scaffolding” ([65180d5](https://github.com/sparanoid/sparanoid.com/commit/65180d5))
+
+### Features
+
+* **page:** update home for new theme structure ([b4b98b9](https://github.com/sparanoid/sparanoid.com/commit/b4b98b9))
+* **post:** add long-waiting post “Almace Scaffolding” ([3317fae](https://github.com/sparanoid/sparanoid.com/commit/3317fae))
+* **post:** add new post “Lightense Images” ([18c54b6](https://github.com/sparanoid/sparanoid.com/commit/18c54b6))
+* **post:** update color scheme for “Lightense Images” ([8bf199d](https://github.com/sparanoid/sparanoid.com/commit/8bf199d))
+* **post:** update Lightense Image custom background ([0389404](https://github.com/sparanoid/sparanoid.com/commit/0389404))
+* **post:** update post “Lightense Images” for new effect ([5efa37f](https://github.com/sparanoid/sparanoid.com/commit/5efa37f))
+* **posts:** update plugin from Intense to Lightense ([72cd324](https://github.com/sparanoid/sparanoid.com/commit/72cd324))
+* **script:** update LIghtense Images ([f92feea](https://github.com/sparanoid/sparanoid.com/commit/f92feea))
+
+
+
 <a name="24.1.17"></a>
 ## [24.1.17](https://github.com/sparanoid/sparanoid.com/compare/v24.1.16...v24.1.17) (2016-03-01)
 
