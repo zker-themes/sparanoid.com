@@ -1,3 +1,13 @@
+<a name="24.2.0"></a>
+# [24.2.0](https://github.com/sparanoid/sparanoid.com/compare/v24.1.18...v24.2.0) (2016-06-06)
+
+
+### Features
+
+* **homepage:** simplify content ([3203608](https://github.com/sparanoid/sparanoid.com/commit/3203608))
+
+
+
 <a name="24.1.18"></a>
 ## [24.1.18](https://github.com/sparanoid/sparanoid.com/compare/v24.1.17...v24.1.18) (2016-06-02)
 
