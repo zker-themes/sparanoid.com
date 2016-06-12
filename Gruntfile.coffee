@@ -353,6 +353,9 @@ module.exports = (grunt) ->
       amsf__theme__to_dev_repo:
         command: "rsync -avz --delete --progress --exclude=.git --exclude=node_modules <%= amsf.base %>/themes/<%= amsf.theme.current %>/ /Users/sparanoid/Git/amsf-<%= amsf.theme.current %> > rsync-theme-dev.log"
 
+      amsf__release:
+        command: "git checkout release && git pull && git merge master --no-edit && git push && git checkout master && git push"
+
     concurrent:
       options:
         logConcurrentOutput: true
@@ -630,6 +633,14 @@ module.exports = (grunt) ->
       "replace:amsf__site__update_version"
       "bump-commit"
     ]
+    if grunt.option("publish")
+      grunt.task.run [
+        "shell:amsf__release"
+      ]
+
+  grunt.registerTask "deploy-rsync", "Deploy to remote server via rsync",  [
+    "shell:amsf__deploy__rsync"
+  ]
 
   grunt.registerTask "deploy-sparanoid", "Deploy to remote server (for sparanoid.com)",  ->
     if grunt.option("no-commit")
@@ -642,17 +653,12 @@ module.exports = (grunt) ->
         "shell:amsf__deploy__sparanoid__auto_commit"
       ]
 
+  grunt.registerTask "deploy", "Deploy to remote server", (type) ->
+    grunt.task.run [
+      "deploy-#{type or 'rsync'}"
+    ]
+
   grunt.registerTask "default", "Default task aka. build task",  ->
     grunt.task.run [
       "build"
     ]
-
-    # Deploy options
-    if grunt.option("deploy") is "rsync"
-      grunt.task.run [
-        "shell:amsf__deploy__rsync"
-      ]
-    else if grunt.option("deploy") is "sparanoid"
-      grunt.task.run [
-        "deploy-sparanoid"
-      ]
