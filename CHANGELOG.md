@@ -1,3 +1,18 @@
+<a name="24.2.1"></a>
+## [24.2.1](https://github.com/sparanoid/sparanoid.com/compare/v24.2.0...v24.2.1) (2016-06-18)
+
+
+### Bug Fixes
+
+* **email:** insecure signup form ([f9d3c8d](https://github.com/sparanoid/sparanoid.com/commit/f9d3c8d))
+
+### Features
+
+* **config:** go HTTPS ([04e2974](https://github.com/sparanoid/sparanoid.com/commit/04e2974))
+* **email:** update newsletter provider from Campaign Monitor to MailChimp ([394cfc6](https://github.com/sparanoid/sparanoid.com/commit/394cfc6))
+
+
+
 <a name="24.2.0"></a>
 # [24.2.0](https://github.com/sparanoid/sparanoid.com/compare/v24.1.18...v24.2.0) (2016-06-06)
 
