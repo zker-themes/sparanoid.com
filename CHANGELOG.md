@@ -1,3 +1,17 @@
+<a name="24.2.2"></a>
+## [24.2.2](https://github.com/sparanoid/sparanoid.com/compare/v24.2.1...v24.2.2) (2016-07-12)
+
+
+### Bug Fixes
+
+* **post:** missing download link variable in “Tianjin Project” ([f08f1c2](https://github.com/sparanoid/sparanoid.com/commit/f08f1c2))
+
+### Features
+
+* **post:** update “CloudFront Cost Control” ([a6f008e](https://github.com/sparanoid/sparanoid.com/commit/a6f008e))
+
+
+
 <a name="24.2.1"></a>
 ## [24.2.1](https://github.com/sparanoid/sparanoid.com/compare/v24.2.0...v24.2.1) (2016-06-18)
 
