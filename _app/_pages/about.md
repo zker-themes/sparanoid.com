@@ -5,7 +5,7 @@ permalink: /about/
 desc: 關於・について・Introduction
 ---
 
-Sparanoid is a one-man design studio operated by Tunghsiao Liu. He is available for freelance design work as well as consulting. You can send email to [t@sparanoid.com](mailto:t@sparanoid.com) or ping him on [Twitter](http://twitter.com/tunghsiao).
+Sparanoid is a design studio operated by Tunghsiao Liu. He is available for freelance design work as well as consulting. You can send email to [t@sparanoid.com](mailto:t@sparanoid.com) or ping him on [Twitter](http://twitter.com/tunghsiao).
 
 ## Colophon
 
