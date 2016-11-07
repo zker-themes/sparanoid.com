@@ -6,4 +6,5 @@
 version:        24.2.2
 
 # Current theme
-theme:          curtana
+amsf_theme:     curtana
+amsf_theme_url: https://github.com/amsf/amsf-curtana
