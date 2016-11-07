@@ -1,3 +1,18 @@
+<a name="24.2.3"></a>
+## [24.2.3](https://github.com/sparanoid/sparanoid.com/compare/v24.2.2...v24.2.3) (2016-11-07)
+
+
+### Bug Fixes
+
+* **post:** dead external link ([55d6f4f](https://github.com/sparanoid/sparanoid.com/commit/55d6f4f))
+
+### Features
+
+* **index:** update copywriting ([6879ae6](https://github.com/sparanoid/sparanoid.com/commit/6879ae6))
+* **page:** update site description ([96ef2e7](https://github.com/sparanoid/sparanoid.com/commit/96ef2e7))
+
+
+
 <a name="24.2.2"></a>
 ## [24.2.2](https://github.com/sparanoid/sparanoid.com/compare/v24.2.1...v24.2.2) (2016-07-12)
 
