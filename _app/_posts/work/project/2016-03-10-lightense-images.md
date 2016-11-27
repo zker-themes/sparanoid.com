@@ -10,7 +10,6 @@ scheme-code: "#ff65d2"
 scheme-bg: "#dbf5ff"
 scheme-bg-light: true
 plugin: lightense
-hidden: true
 ---
 
 A dependency-free pure JavaScript image zooming library less than 2 KB (gzipped). Inspired by [fat/zoom.js](https://github.com/fat/zoom.js) and [tholman/intense-images](https://github.com/tholman/intense-images).
