@@ -1,0 +1,42 @@
+---
+layout: page
+title: Donate
+permalink: /donate/
+desc: 感謝・ありがとう・Thank you
+category: store
+foot: |
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_Gos475SaV4jwPvcO7P5b1RQS',
+    image: 'https://sparanoid.com/apple-touch-icon.png',
+    locale: 'en',
+    bitcoin: true,
+    token: function(token) {
+      // You can access the token ID with `token.id`.
+      // Get the token ID to your server-side code for use.
+    }
+  });
+
+  document.getElementById('stripe-btn').addEventListener('click', function(e) {
+    // Open Checkout with further options:
+    handler.open({
+      name: 'Sparanoid, Inc.',
+      description: 'A cup of coffee',
+      amount: 100
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation:
+  window.addEventListener('popstate', function() {
+    handler.close();
+  });
+  </script>
+---
+
+<p>I make many different kinds of things, WordPress themes, plugins, app skins, and websites. If you like my work, please consider buying me a cup of coffee. Thanks!</p>
+
+<button class="largetype" id="stripe-btn">Buy me a cup of coffee.</button>
+
+<p>Or you can also donate me via <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=LTXZ835Y6T95S">PayPal</a>.</p>
