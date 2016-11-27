@@ -25,6 +25,7 @@ Get high-res artwork for apps, music, books, movies, TV shows, podcasts and more
 - iOS app icons
 - OS X app icons
 - Music album covers
+- Music video thumbnails
 - Book covers
 - Movie posters
 - TV show covers
@@ -34,7 +35,7 @@ Get high-res artwork for apps, music, books, movies, TV shows, podcasts and more
 
 ## Unsupported Types
 
-- Music video thumbnails
+- None! (since Nov 27, 2016)
 
 ## Demo
 
@@ -43,7 +44,6 @@ Try this fancy [video demo](https://www.youtube.com/watch?v=8NVyzKb7VIY).
 ## Downloads
 
 <div class="largetype">
-  <div><a href="http://github.com/sparanoid/itunes-artwork-grabber/releases">Add to Safari</a></div>
   <div><a href="#!" onclick="chrome.webstore.install()" id="install-button" disabled>Add to Chrome</a></div>
   <div><a href="http://greasyfork.org/en/scripts/8947-itunes-artwork-grabber-by-tunghsiao-liu">Download via Greasy Fork</a></div>
   <div><a href="http://openuserjs.org/scripts/sparanoid/iTunes_Artwork_Grabber_by_Tunghsiao_Liu">Download via OpenUserJS</a></div>
