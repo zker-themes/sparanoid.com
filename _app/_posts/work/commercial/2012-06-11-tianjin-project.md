@@ -34,4 +34,4 @@ plugin: lightense
 
 <h2>Promo Video</h2>
 
-<iframe src="http://player.vimeo.com/video/54786277?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ee3344" width="750" height="422" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="https://player.vimeo.com/video/54786277?title=0&byline=0&portrait=0&badge=0&color=a212d1" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
