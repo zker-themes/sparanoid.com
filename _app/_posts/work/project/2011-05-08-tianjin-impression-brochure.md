@@ -4,7 +4,6 @@ title: Tianjin Impression Brochure
 category: work
 tag: project
 excerpt: Tianjin Impression brochure for my college work
-thumb: tianjin-impression-brochure.jpg
 plugin: lightense
 ---
 
