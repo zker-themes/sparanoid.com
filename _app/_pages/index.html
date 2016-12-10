@@ -10,9 +10,9 @@ permalink: /
   <!-- Post title -->
   <header>
     <h1>
-      Sparanoid, a design studio operated by Tunghsiao Liu.
+      Sparanoid, a design studio.
       {% for post in site.categories.work limit:1 %}
-        He recently made <a href="{{ post.url | prepend: site.base }}" class=latest>{{ post.title }}</a>
+        It recently made <a href="{{ post.url | prepend: site.base }}" class=latest>{{ post.title }}</a>
       {% endfor %}
     </h1>
   </header>
