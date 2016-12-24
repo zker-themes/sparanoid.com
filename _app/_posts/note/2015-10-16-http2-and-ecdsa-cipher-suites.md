@@ -24,7 +24,7 @@ So you need the following cipher suite at the beginning of your suites:
 ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256
 ```
 
-In my case if you're using a ECC certificate you will need:
+In my case if you're using an ECC certificate you will need:
 
 ```nginx
 ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256
