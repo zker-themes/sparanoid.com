@@ -14,4 +14,4 @@ Sparanoid is a design studio operated by Tunghsiao Liu. He is available for free
 [CloudFront](http://aws.amazon.com/cloudfront/) -
 [Textmate](http://macromates.com/)
 
-All posts are &copy; Tunghsiao Liu, all rights reserved. The views expressed on this site are mine alone and not those of my employers and clients, past and present.
+All posts are &copy; Sparanoid, Inc., all rights reserved. The views expressed on this site are mine alone and not those of my employers and clients, past and present.
