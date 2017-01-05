@@ -6,13 +6,11 @@ tag: wordpress
 excerpt: Adds Instagram badges to your WordPress blog that will help you link to and promote your Instagram profile.
 thumb: instagram-badges-thumb.png
 svg-headline: svg/instagram-badges.svg
-svg-headline-width: 500
-svg-headline-height: 76
+svg-headline-width: 460
 link: http://wordpress.org/plugins/instagram-badges/
-scheme-text: "#3f729b"
-scheme-link: "#20262b"
-scheme-hover: "#5299d2"
-scheme-bg: "#e1f2fc"
+scheme-text: "#000"
+scheme-link: "#ff496c"
+scheme-hover: "#ff8c2e"
 scheme-bg-light: true
 ---
 

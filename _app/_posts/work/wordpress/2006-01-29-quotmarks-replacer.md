@@ -4,11 +4,15 @@ title: Quotmarks Replacer
 category: work
 tag: wordpress
 excerpt: A plugin that disables wptexturize function
-thumb: qmr.png
+thumb: quotmarks-replacer.png
 svg-headline: svg/quotmarks-replacer.svg
-svg-headline-width: 500
-svg-headline-height: 45
+svg-headline-width: 440
 link: http://wordpress.org/plugins/quotmarks-replacer/
+scheme-text: "#000"
+scheme-link: "#36bd6d"
+scheme-hover: "#2afd80"
+scheme-code: "#ffb800"
+scheme-bg-light: true
 ---
 
 <p><strong>Quotmarks Replacer</strong> is a WordPress plugin to disable <code>wptexturize</code> function that keeps all quotation marks and suspension points in half-width form.</p>

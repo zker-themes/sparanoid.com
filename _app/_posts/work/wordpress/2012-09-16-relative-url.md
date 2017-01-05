@@ -4,16 +4,16 @@ title: Relative URL
 category: work
 tag: wordpress
 excerpt: A WordPress plugin to apply wp_make_link_relative function to links to convert them to relative URLs.
-thumb: relative-url-thumb.png
+thumb: relative-url.png
 svg-headline: svg/relative-url.svg
-svg-headline-width: 500
-svg-headline-height: 73
+svg-headline-width: 400
 link: http://wordpress.org/plugins/relative-url/
 scheme-text: "#00fff0"
-scheme-link: "#00706c"
-scheme-hover: "#fff"
+scheme-link: "#ff3f00"
+scheme-hover: "#fffd4a"
 scheme-code: "#39beb6"
-scheme-bg: "#009990"
+scheme-bg: "#001311"
+scheme-bg-light: true
 ---
 
 <p><b>Relative URL</b> is a WordPress plugin to apply <code>wp_make_link_relative</code> function to links (posts, categories, pages and etc.) to convert them to relative URLs. Useful for developers when debugging local WordPress instance on a mobile device (iPad. iPhone, etc.). If you love this plugin, please consider <a href="{{ '/donate/' | prepend: site.base }}">buying me a cup of coffee</a>.</p>

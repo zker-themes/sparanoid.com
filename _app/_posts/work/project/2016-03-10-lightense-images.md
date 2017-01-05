@@ -7,8 +7,8 @@ scheme-text: "#3b1599"
 scheme-link: "#ff3f00"
 scheme-hover: "#ff6300"
 scheme-code: "#d6642a"
-scheme-bg: "#dbf5ff"
-scheme-bg-light: true
+scheme-bg: "#fff"
+scheme-list-color: "text"
 plugin: lightense
 ---
 

@@ -6,18 +6,13 @@ tag: wordpress
 excerpt: A WordPress plugin that sets user_can_richedit to false to disable TinyMCE Visual Editor (WYSIWYG editor) totally completely permanently forever.
 thumb: disable-wysiwyg-thumb.png
 svg-headline: svg/disable-wysiwyg.svg
-svg-headline-width: 581
-svg-headline-height: 70
+svg-headline-width: 400
 link: http://wordpress.org/plugins/disable-wysiwyg/
-scheme-text: "#cb3920"
-scheme-link: "#f00"
-scheme-hover: "#ff7a00"
-scheme-code: "#8500ff"
-scheme-bg: "#ffe900"
-css: |
-  body {
-    background-image: linear-gradient(to bottom, #fffc00, #ffd200);
-  }
+scheme-text: "#7f6488"
+scheme-link: "#a600ff"
+scheme-hover: "#d27dff"
+scheme-code: "#ffb800"
+scheme-bg-light: true
 ---
 
 You clients are always using the crappy visual editor in your WordPress? They always paste shitty formatted texts from the internet? They also edit your posts and fuck it up? Then you should try this plugin.
