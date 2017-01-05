@@ -8,12 +8,12 @@ link: http://avoscloud.com/
 svg-headline: svg/avoscloud.svg
 svg-headline-width: 458
 svg-headline-height: 64
-scheme-text: "#3090e4"
-scheme-link: "#fa9324"
+scheme-text: "#666c7b"
+scheme-link: "#ff8b0e"
 scheme-hover: "#fa9324"
-scheme-code: "#32d5db"
+scheme-code: "#21c2e6"
 scheme-bg: "#fff"
-scheme-bg-light: true
+scheme-list-color: "code"
 plugin: lightense
 ---
 

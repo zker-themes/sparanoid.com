@@ -10,7 +10,7 @@ scheme-link: "#ff8500"
 scheme-hover: "#9e4614"
 scheme-code: "#39beb6"
 scheme-bg: "#fefbed"
-scheme-bg-light: true
+scheme-list-color: "text"
 ---
 
 <video poster="{{ site.file }}/slimbox-voxgrowl.png" preload="none" controls>
