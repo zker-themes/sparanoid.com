@@ -3,7 +3,7 @@
   "version": "24.2.3",
   "description": "Jekyll runing on sparanoid.com",
   "author": "Tunghsiao Liu",
-  "homepage": "http://sparanoid.com/",
+  "homepage": "https://sparanoid.com/",
   "main": "Gruntfile.coffee",
   "scripts": {
     "test": "grunt test"
@@ -55,7 +55,7 @@
     "grunt-rev": "^0.1.0",
     "grunt-shell": "^2.0.0",
     "grunt-text-replace": "^0.4.0",
-    "grunt-uncss-inline": "^1.0.4",
+    "grunt-uncss-inline": "^1.0.5",
     "grunt-xmlmin": "^0.1.8",
     "jit-grunt": "^0.10.0",
     "time-grunt": "^1.4.0"

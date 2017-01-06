@@ -1,9 +1,9 @@
 # Sparanoid
 [![Build Status](https://travis-ci.org/sparanoid/sparanoid.com.svg)](https://travis-ci.org/sparanoid/sparanoid.com)
 [![devDependency Status](https://david-dm.org/sparanoid/sparanoid.com/dev-status.svg)](https://david-dm.org/sparanoid/sparanoid.com#info=devDependencies)
-[![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](http://sparanoid.com/lab/amsf/)
+[![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/lab/amsf/)
 
-[Almace Scaffolding](http://github.com/sparanoid/almace-scaffolding/) running on [sparanoid.com](http://sparanoid.com/).
+[Almace Scaffolding](https://github.com/sparanoid/almace-scaffolding/) running on [sparanoid.com](https://sparanoid.com/).
 
 ## Setup
 
@@ -28,4 +28,4 @@ Following files, directories and their contents are copyright Tunghsiao Liu and 
 
 All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
 
-© Tunghsiao Liu. Rights reserved as indicated above.
+© Sparanoid, Inc., Rights reserved as indicated above.
