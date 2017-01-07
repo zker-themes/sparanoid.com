@@ -4,7 +4,7 @@ title: Instagram Badges
 category: work
 tag: wordpress
 excerpt: Adds Instagram badges to your WordPress blog that will help you link to and promote your Instagram profile.
-thumb: instagram-badges-thumb.png
+thumbnail: thumb/instagram-badges.png
 heading-img: svg/instagram-badges.svg
 heading-img-local: true
 heading-img-width: 460

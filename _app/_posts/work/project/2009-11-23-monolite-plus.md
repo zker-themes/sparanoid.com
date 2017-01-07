@@ -4,7 +4,7 @@ title: foobar2000 - MonoLite Plus
 category: work
 tag: project
 excerpt: A foobar2000 theme based on Columns UI
-thumb: monolite-plus-large.jpg
+thumbnail: thumb/monolite-plus-large.jpg
 scheme-text: "#9d162e"
 scheme-link: "#ffbdbd"
 scheme-hover: "#ffd18c"

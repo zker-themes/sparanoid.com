@@ -3,7 +3,7 @@ layout: post
 title: AVOS Cloud
 category: work
 tag: commercial
-thumb: avoscloud-thumb.png
+thumbnail: thumb/avoscloud-thumb.png
 link: http://avoscloud.com/
 heading-img: svg/avoscloud.svg
 heading-img-local: true

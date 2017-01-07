@@ -4,7 +4,7 @@ title: Moonstruck Princess
 category: work
 tag: drawing
 excerpt: Moonstruck princess in my dream, inspired by you.
-thumb: moonstruck-princess.jpg
+thumbnail: thumb/moonstruck-princess.jpg
 scheme-text: "#ec7f2e"
 scheme-link: "#fff"
 scheme-hover: "#fff"

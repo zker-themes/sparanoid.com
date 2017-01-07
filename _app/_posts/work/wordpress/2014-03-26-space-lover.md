@@ -4,7 +4,7 @@ title: Space Lover
 category: work
 tag: wordpress
 excerpt: This WordPress plugin magically adds an extra space between Chinese characters and English letters / numbers / common punctuation marks
-thumb: space-lover.png
+thumbnail: thumb/space-lover.png
 heading-img: svg/space-lover.svg
 heading-img-local: true
 heading-img-width: 300

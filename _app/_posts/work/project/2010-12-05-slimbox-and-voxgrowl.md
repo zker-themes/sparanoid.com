@@ -4,7 +4,7 @@ title: SlimBox & VoxGrowl
 category: work
 tag: project
 excerpt: The missing Growl styles for OS X
-thumb: slimbox-and-voxgrowl.jpg
+thumbnail: thumb/slimbox-and-voxgrowl.jpg
 scheme-text: "#c28955"
 scheme-link: "#ff8500"
 scheme-hover: "#9e4614"

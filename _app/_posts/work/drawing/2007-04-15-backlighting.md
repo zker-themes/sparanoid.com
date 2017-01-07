@@ -4,7 +4,7 @@ title: Backlighting
 category: work
 tag: drawing
 excerpt: Backlighting
-thumb: backlighting.jpg
+thumbnail: thumb/backlighting.jpg
 plugin: lightense
 ---
 

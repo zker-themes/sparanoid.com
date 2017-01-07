@@ -4,7 +4,7 @@ title: Quotmarks Replacer
 category: work
 tag: wordpress
 excerpt: A plugin that disables wptexturize function
-thumb: quotmarks-replacer.png
+thumbnail: thumb/quotmarks-replacer.png
 heading-img: svg/quotmarks-replacer.svg
 heading-img-local: true
 heading-img-width: 440

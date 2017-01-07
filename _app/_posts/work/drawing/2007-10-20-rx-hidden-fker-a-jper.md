@@ -4,7 +4,7 @@ title: RX Hidden FKER a JPER
 category: work
 tag: drawing
 excerpt: Finished in my high school
-thumb: rx-hidden-fker-a-jper.jpg
+thumbnail: thumb/rx-hidden-fker-a-jper.jpg
 plugin: lightense
 ---
 

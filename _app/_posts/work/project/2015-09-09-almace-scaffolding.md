@@ -3,7 +3,7 @@ layout: post
 title: Almace Scaffolding
 category: work
 tag: project
-thumb: almace-scaffolding.png
+thumbnail: thumb/almace-scaffolding.png
 link: /lab/amsf/
 scheme-text: "#ff00b4"
 scheme-link: "#ff00b4"

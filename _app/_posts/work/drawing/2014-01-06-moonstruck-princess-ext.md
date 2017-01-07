@@ -4,7 +4,7 @@ title: Moonstruck Princess Extended
 category: work
 tag: drawing
 excerpt: Moonstruck princess in my dream, inspired by you.
-thumb: moonstruck-princess-ext.jpg
+thumbnail: thumb/moonstruck-princess-ext.jpg
 ---
 
 <p><a href="{{ site.file }}/moonstruck-princess-ext-bw.png"><img src="{{ site.file }}/moonstruck-princess-ext-bw.jpg"></a></p>

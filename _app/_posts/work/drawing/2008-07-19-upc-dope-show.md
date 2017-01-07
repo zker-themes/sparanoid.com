@@ -4,7 +4,7 @@ title: UPC Dope Show
 category: work
 tag: drawing
 excerpt: We’re all stars now, in the dope show
-thumb: upc-dope-show.jpg
+thumbnail: thumb/upc-dope-show.jpg
 scheme-text: "#fff"
 scheme-link: "#fff"
 scheme-hover: "#fff"

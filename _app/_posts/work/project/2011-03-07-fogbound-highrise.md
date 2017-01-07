@@ -4,7 +4,7 @@ title: fogbound-highrise
 category: work
 tag: project
 excerpt: The 15th version of sparanoid.com, featuring Jekyll
-thumb: fogbound-highrise.png
+thumbnail: thumb/fogbound-highrise.png
 plugin: lightense
 ---
 

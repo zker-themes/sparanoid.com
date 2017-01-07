@@ -4,7 +4,7 @@ title: Tianjin Project
 category: work
 tag: commercial
 excerpt: A Detailed Introduction to Municipality of Tianjin
-thumb: tianjin-project.jpg
+thumbnail: thumb/tianjin-project.jpg
 heading-img: svg/tianjin-project.svg
 heading-img-local: true
 heading-img-width: 400

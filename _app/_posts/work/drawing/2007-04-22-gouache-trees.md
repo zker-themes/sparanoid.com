@@ -4,7 +4,7 @@ title: Gouache - Trees
 category: work
 tag: drawing
 excerpt: Gouache - Trees
-thumb: gouache-trees.jpg
+thumbnail: thumb/gouache-trees.jpg
 plugin: lightense
 ---
 

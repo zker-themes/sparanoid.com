@@ -4,7 +4,7 @@ title: Relative URL
 category: work
 tag: wordpress
 excerpt: A WordPress plugin to apply wp_make_link_relative function to links to convert them to relative URLs.
-thumb: relative-url.png
+thumbnail: thumb/relative-url.png
 heading-img: svg/relative-url.svg
 heading-img-local: true
 heading-img-width: 400
