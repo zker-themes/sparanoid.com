@@ -38,7 +38,7 @@ $ make
 
 There's no invalidation anymore, The cost of invalidation requests is first 1,000 paths free, then $0.005 per path. For example if you deploy your sites for client preview, let's say 20 there're 10 deploys per day with an average of 20 files (CSS, scripts and images) per deploy, all done automatically via git hooks. You will have 200 invalidations per day. 1000 for five days then you'll run out of free tier. you have to pay $5 per 1000 request if you continue requesting invalidations.
 
-So in my [current setup](http://sparanoid.com/lab/amsf/), I use [grunt-cache-bust](https://github.com/hollandben/grunt-cache-bust) to hash files. All file references will be updated automatically via Grunt task.
+So in my [current setup](https://sparanoid.com/lab/amsf/), I use [grunt-cache-bust](https://github.com/hollandben/grunt-cache-bust) to hash files. All file references will be updated automatically via Grunt task.
 
 ### Update Jun 19, 2016
 
