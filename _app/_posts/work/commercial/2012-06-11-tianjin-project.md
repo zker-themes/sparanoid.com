@@ -5,9 +5,9 @@ category: work
 tag: commercial
 excerpt: A Detailed Introduction to Municipality of Tianjin
 thumb: tianjin-project.jpg
-svg-headline: svg/tianjin-project.svg
-svg-headline-width: 400
-svg-headline-height: 145
+heading-img: svg/tianjin-project.svg
+heading-img-local: true
+heading-img-width: 400
 link: /lab/tianjin/
 plugin: lightense
 ---

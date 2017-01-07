@@ -5,8 +5,9 @@ category: work
 tag: wordpress
 excerpt: A plugin that disables wptexturize function
 thumb: quotmarks-replacer.png
-svg-headline: svg/quotmarks-replacer.svg
-svg-headline-width: 440
+heading-img: svg/quotmarks-replacer.svg
+heading-img-local: true
+heading-img-width: 440
 link: http://wordpress.org/plugins/quotmarks-replacer/
 scheme-text: "#000"
 scheme-link: "#36bd6d"

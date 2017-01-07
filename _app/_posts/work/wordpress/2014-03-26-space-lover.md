@@ -5,8 +5,9 @@ category: work
 tag: wordpress
 excerpt: This WordPress plugin magically adds an extra space between Chinese characters and English letters / numbers / common punctuation marks
 thumb: space-lover.png
-svg-headline: svg/space-lover.svg
-svg-headline-width: 300
+heading-img: svg/space-lover.svg
+heading-img-local: true
+heading-img-width: 300
 link: http://wordpress.org/plugins/corner-bracket-lover/
 scheme-text: "#7d4f46"
 scheme-link: "#ff4525"

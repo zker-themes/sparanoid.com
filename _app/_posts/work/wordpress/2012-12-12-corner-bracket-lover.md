@@ -5,8 +5,9 @@ category: work
 tag: wordpress
 excerpt: A WordPress plugin to convert all curly quotation marks in your posts to traditional corner brackets.
 thumb: corner-bracket-lover.png
-svg-headline: svg/corner-bracket-lover.svg
-svg-headline-width: 500
+heading-img: svg/corner-bracket-lover.svg
+heading-img-local: true
+heading-img-width: 500
 link: http://wordpress.org/plugins/corner-bracket-lover/
 scheme-text: "#a79bbf"
 scheme-link: "#6d52a7"

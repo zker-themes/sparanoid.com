@@ -5,8 +5,9 @@ category: work
 tag: commercial
 thumb: avoscloud-thumb.png
 link: http://avoscloud.com/
-svg-headline: svg/avoscloud.svg
-svg-headline-width: 458
+heading-img: svg/avoscloud.svg
+heading-img-local: true
+heading-img-width: 458
 svg-headline-height: 64
 scheme-text: "#666c7b"
 scheme-link: "#ff8b0e"

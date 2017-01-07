@@ -5,8 +5,9 @@ category: work
 tag: wordpress
 excerpt: A WordPress plugin to add readability.com widget on your site. A must-have plugin if you're a Readability publisher. This plugin also works fine with multisite enabled WordPress (aka. WordPress Mu).
 thumb: readability-buttons.png
-svg-headline: svg/readability-buttons.svg
-svg-headline-width: 460
+heading-img: svg/readability-buttons.svg
+heading-img-local: true
+heading-img-width: 460
 link: http://wordpress.org/plugins/readability-buttons/
 scheme-text: "#000"
 scheme-link: "#1b24fb"
