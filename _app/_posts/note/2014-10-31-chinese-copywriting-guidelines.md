@@ -2,7 +2,7 @@
 layout: post
 title: Chinese Copywriting Guidelines
 category: note
-link: http://github.com/sparanoid/chinese-copywriting-guidelines
+link: https://github.com/sparanoid/chinese-copywriting-guidelines
 ---
 
 Chinese copywriting guidelines for better written communication.

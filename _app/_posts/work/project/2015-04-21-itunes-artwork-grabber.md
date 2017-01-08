@@ -47,7 +47,7 @@ Try this fancy [video demo](https://www.youtube.com/watch?v=8NVyzKb7VIY).
   <div><a href="#!" onclick="chrome.webstore.install()" id="install-button" disabled>Add to Chrome</a></div>
   <div><a href="http://greasyfork.org/en/scripts/8947-itunes-artwork-grabber-by-tunghsiao-liu">Download via Greasy Fork</a></div>
   <div><a href="http://openuserjs.org/scripts/sparanoid/iTunes_Artwork_Grabber_by_Tunghsiao_Liu">Download via OpenUserJS</a></div>
-  <div><a href="http://github.com/sparanoid/itunes-artwork-grabber">View source at GitHub</a></div>
+  <div><a href="https://github.com/sparanoid/itunes-artwork-grabber">View source at GitHub</a></div>
 </div>
 
 ## Love this?

@@ -46,7 +46,7 @@ exclude_from_upload:
   - (?:\.(?:DS_Store|bak|config|sql|fla|psd|ai|sketch|ini|log|sh|inc|swp|dist))$
 ```
 
-For more information please refer `s3_website`'s [documentation](http://github.com/laurilehmijoki/s3_website).
+For more information please refer `s3_website`'s [documentation](https://github.com/laurilehmijoki/s3_website).
 
 ### Fixing wrong feed URL
 
