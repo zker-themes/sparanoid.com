@@ -24,7 +24,7 @@ Following files, directories and their contents are copyright Tunghsiao Liu and 
 
 - `./_app/_posts/`
 - `./_app/apple-touch-icon.png`
-- `./_app/favicon.ico`
+- `./_app/favicon.*`
 
 All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
 
