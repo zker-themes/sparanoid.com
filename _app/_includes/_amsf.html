@@ -1,17 +1,20 @@
 {% comment %}
-  Post author meta
+  Include type
+
+  Define include type of this file, make sure code snippets work smoothly on
+  both `page` and `post` and whatever content types:
+
+  {% include _amsf.html type=post %}
+
+  @since 1.1.4
 {% endcomment %}
-{% if post.author %}
-  {% assign author = site.data.authors[post.author] %}
-{% else %}
-  {% assign author = site.data.authors["default"] %}
-{% endif %}
+{% assign type = include.type | default: page %}
 
 {% comment %}
-  Page author meta
+  Page/post author meta
 {% endcomment %}
-{% if page.author %}
-  {% assign author = site.data.authors[page.author] %}
+{% if type.author %}
+  {% assign author = site.data.authors[type.author] %}
 {% else %}
   {% assign author = site.data.authors["default"] %}
 {% endif %}
@@ -58,35 +61,85 @@
 {% capture amsf_user_assets %}{{ site.assets | prepend: site.base }}{% endcapture %}
 
 {% comment %}
+  Page theme color
+
+  Generate page/post theme color based on current config, can used by:
+  - Custom post link color in article list
+  - Safari mask icon
+  - Chrome Web App theme color
+
+  @since 1.1.4
+{% endcomment %}
+{% capture amsf_page_theme_color %}
+  {% if type.scheme-list-color %}
+    {% if type.scheme-list-color == 'text' %}
+      {{ type.scheme-text }}
+    {% elsif type.scheme-list-color == 'hover' %}
+      {{ type.scheme-hover }}
+    {% elsif type.scheme-list-color == 'code' %}
+      {{ type.scheme-code }}
+    {% elsif type.scheme-list-color == 'bg' %}
+      {{ type.scheme-bg }}
+    {% else %}
+      {{ type.scheme-link }}
+    {% endif %}
+  {% elsif type.scheme-bg %}
+    {% if type.scheme-bg-light %}
+      {{ type.scheme-link }}
+    {% else %}
+      {{ type.scheme-bg }}
+    {% endif %}
+  {% elsif type.scheme-link %}
+    {{ type.scheme-link }}
+  {% endif %}
+{% endcapture %}
+
+{% capture amsf_page_theme_color_with_fallback %}
+  {% assign amsf_page_theme_color = amsf_page_theme_color | strip %}
+  {% if amsf_page_theme_color != "" %}
+    {{ amsf_page_theme_color }}
+  {% else %}
+    {{ site.colors.theme }}
+  {% endif %}
+{% endcapture %}
+
+{% comment %}
   Favicons
 
   Check `static_file` and output favicon markup
 
   @since 1.1.0
 {% endcomment %}
-{% capture amsf_favicon_png %}{{ '/favicon.png' | prepend: site.base }}{% endcapture %}
-{% capture amsf_favicon_svg %}{{ '/favicon.svg' | prepend: site.base }}{% endcapture %}
-{% capture amsf_mask_icon %}{{ '/mask-icon.svg' | prepend: site.base }}{% endcapture %}
-{% capture amsf_apple_touch_icon %}{{ '/apple-touch-icon.png' | prepend: site.base }}{% endcapture %}
+{% capture amsf_favicon_png %}{{ "/favicon.png" | prepend: site.base }}{% endcapture %}
+{% capture amsf_favicon_svg %}{{ "/favicon.svg" | prepend: site.base }}{% endcapture %}
+{% capture amsf_mask_icon %}{{ "/mask-icon.svg" | prepend: site.base }}{% endcapture %}
+{% capture amsf_apple_touch_icon %}{{ "/apple-touch-icon.png" | prepend: site.base }}{% endcapture %}
 
 {% capture amsf_favicons %}
   {% for static_file in site.static_files %}
-    {% if static_file.path == '/favicon.png' %}
+    {% if static_file.path == "/favicon.png" %}
       <link rel="icon" href="{{ amsf_favicon_png }}" type="image/png">
     {% endif %}
 
-    {% if static_file.path == '/favicon.svg' %}
+    {% if static_file.path == "/favicon.svg" %}
       <link rel="icon" href="{{ amsf_favicon_svg }}" sizes="any" type="image/svg+xml">
     {% endif %}
 
-    {% if static_file.path == '/mask-icon.svg' %}
-      <link rel="mask-icon" href="{{ amsf_mask_icon }}" color="{{ site.primary_color }}">
+    {% if static_file.path == "/mask-icon.svg" %}
+      <link rel="mask-icon" href="{{ amsf_mask_icon }}" color="{{ amsf_page_theme_color_with_fallback | strip }}">
     {% endif %}
 
-    {% if static_file.path == '/apple-touch-icon.png' %}
+    {% if static_file.path == "/apple-touch-icon.png" %}
       <link rel="apple-touch-icon" href="{{ amsf_apple_touch_icon }}">
     {% endif %}
   {% endfor %}
+{% endcapture %}
+
+{% comment %}
+  Chrome Web App theme color
+{% endcomment %}
+{% capture amsf_theme_color %}
+  {{ amsf_page_theme_color_with_fallback }}
 {% endcapture %}
 
 {% comment %}
@@ -434,7 +487,7 @@
   Service Worker
 {% endcomment %}
 {% capture amsf_service_worker %}
-  {% if site.service_worker == true and site.dev == false %}
+  {% if site.service_worker.enabled == true and site.dev == false %}
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('{{ "/service-worker.js" | prepend: site.base }}').then(function (registration) {
