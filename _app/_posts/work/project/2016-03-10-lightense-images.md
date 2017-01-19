@@ -51,11 +51,9 @@ Lightense(elements, {
 
 ```html
 <img src="photo.jpg">
-<script src="lightense.js"></script>
 <script>
   window.addEventListener('load', function () {
-    var el = document.querySelectorAll('img');
-    Lightense(el);
+    Lightense('img');
   }, false);
 </script>
 ```
@@ -84,8 +82,7 @@ Lightense(elements, {
 <img src="photo.jpg" class="no-lightense">
 <script>
   window.addEventListener('load', function () {
-    var el = document.querySelectorAll('img:not(.no-lightense)');
-    Lightense(el);
+    Lightense('img:not(.no-lightense)');
   }, false);
 </script>
 ```
