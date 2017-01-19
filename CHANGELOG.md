@@ -1,3 +1,44 @@
+<a name="24.2.4"></a>
+## [24.2.4](https://github.com/sparanoid/sparanoid.com/compare/v24.2.3...v24.2.4) (2017-01-19)
+
+
+### Bug Fixes
+
+* a temporary fix for accidently deleting `s3_website` config for sparanoid.com, n ([4cf81ac](https://github.com/sparanoid/sparanoid.com/commit/4cf81ac))
+* accidentally removed deploy config when update AMSF ([06d0888](https://github.com/sparanoid/sparanoid.com/commit/06d0888))
+* **post:** typo in post “HTTP/2 and ECDSA Cipher Suites” ([d3057a9](https://github.com/sparanoid/sparanoid.com/commit/d3057a9))
+* **post:** wrong domain in command for “DMARC” ([6296966](https://github.com/sparanoid/sparanoid.com/commit/6296966))
+* **post:** wrong URL that breaks SSL ([bde6486](https://github.com/sparanoid/sparanoid.com/commit/bde6486))
+* **template:** not compatible with latest AMSF ([ed63d22](https://github.com/sparanoid/sparanoid.com/commit/ed63d22))
+
+### Features
+
+* **amsf:** update AMSF with Service Worker support ([4731b2a](https://github.com/sparanoid/sparanoid.com/commit/4731b2a))
+* **donate:** try Stripe button ([7fdf3c1](https://github.com/sparanoid/sparanoid.com/commit/7fdf3c1))
+* **index:** simplify headline, props @gordianz ([fe69ba0](https://github.com/sparanoid/sparanoid.com/commit/fe69ba0))
+* **page:** update license info ([1400492](https://github.com/sparanoid/sparanoid.com/commit/1400492))
+* **page:** upudate copyright info (again) ([a3a33d7](https://github.com/sparanoid/sparanoid.com/commit/a3a33d7))
+* **post:** add new post “IKEA Stock Availability Checker” ([87570be](https://github.com/sparanoid/sparanoid.com/commit/87570be))
+* **post:** add new post “Omnibox NCR” ([9548221](https://github.com/sparanoid/sparanoid.com/commit/9548221))
+* **post:** add verify DMARC record for post “DMARC” ([6c6c1fd](https://github.com/sparanoid/sparanoid.com/commit/6c6c1fd))
+* **post:** reveal old posts in feed ([1c6d70a](https://github.com/sparanoid/sparanoid.com/commit/1c6d70a))
+* **post:** update content for “Amazon S3 × CloudFront” ([d2a9f84](https://github.com/sparanoid/sparanoid.com/commit/d2a9f84))
+* **post:** update doc for post “Lightense Images” ([3ef3e88](https://github.com/sparanoid/sparanoid.com/commit/3ef3e88))
+* **post:** update examples for “Lightense Images” ([36bf79f](https://github.com/sparanoid/sparanoid.com/commit/36bf79f))
+* **post:** update for “iTunes Artwork Grabber” ([e7434c3](https://github.com/sparanoid/sparanoid.com/commit/e7434c3))
+* **post:** use new Open Graph image for “Readability Buttons” ([dec697c](https://github.com/sparanoid/sparanoid.com/commit/dec697c))
+* **posts:** make links HTTPS ([6ebe030](https://github.com/sparanoid/sparanoid.com/commit/6ebe030))
+* **posts:** minor tweaks for post color scheme ([ff0cc19](https://github.com/sparanoid/sparanoid.com/commit/ff0cc19))
+* update ASMF, fix several Open Graph meta ([c81fbbd](https://github.com/sparanoid/sparanoid.com/commit/c81fbbd))
+* **posts:** update color scheme for WordPress plugins ([86ca2fd](https://github.com/sparanoid/sparanoid.com/commit/86ca2fd))
+* update AMSF to v1.1.0 ([4602008](https://github.com/sparanoid/sparanoid.com/commit/4602008))
+* **posts:** update heading images ([9a6e8bd](https://github.com/sparanoid/sparanoid.com/commit/9a6e8bd))
+* update favicons ([a16b9b1](https://github.com/sparanoid/sparanoid.com/commit/a16b9b1))
+* **posts:** update post thumbnails ([9e5826e](https://github.com/sparanoid/sparanoid.com/commit/9e5826e))
+* **style:** remove legacy style ([ce7a918](https://github.com/sparanoid/sparanoid.com/commit/ce7a918))
+
+
+
 <a name="24.2.3"></a>
 ## [24.2.3](https://github.com/sparanoid/sparanoid.com/compare/v24.2.2...v24.2.3) (2016-11-07)
 
