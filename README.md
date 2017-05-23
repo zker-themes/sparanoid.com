@@ -1,4 +1,6 @@
 # Sparanoid
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/sparanoid.com.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/sparanoid/sparanoid.com.svg)](https://travis-ci.org/sparanoid/sparanoid.com)
 [![devDependency Status](https://david-dm.org/sparanoid/sparanoid.com/dev-status.svg)](https://david-dm.org/sparanoid/sparanoid.com#info=devDependencies)
 [![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/lab/amsf/)
