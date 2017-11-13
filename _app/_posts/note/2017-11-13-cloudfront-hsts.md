@@ -25,7 +25,7 @@ exports.handler = (event, context, callback) => {
 };
 ```
 
-The above code snippet is straightforward: simply add the `Strict-Transport-Security` we need and return the modified header to edge nodes. Then you can publish a new version, create a CloudFront trigger using Distribution ID for the distribution you want to apply this header. Make sure to select `Viewer Response` for your Lambda function to listen for.
+The above code snippet is straightforward: simply add the `Strict-Transport-Security` we need and return the modified header to edge nodes. Then you can publish a new version, create a CloudFront trigger using Distribution ID for the distribution you want to apply this header. Make sure to select `Origin Response` for your Lambda function to listen for.
 
 Once this is submitted new headers will take effect as expected:
 
