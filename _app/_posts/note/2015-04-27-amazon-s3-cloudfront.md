@@ -101,6 +101,8 @@ The only thing you should be aware of is that the Origin Domain Name should be p
 
 Update: As of Jan 21, 2016, you can now use Amazon CloudFront Integrates with AWS Certificate Manager (More like a Let's Encrypt competitor focused on AWS), which can help you issue, manage, and renew SSL/TLS certificates at no extra cost.
 
+The following is the deprecated IAM method:
+
 Amazon has a [very detailed documentation](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html) about using HTTPS with custom SSL certificates and it's hard to get the key points. So here's a brief answer:
 
 ```bash
