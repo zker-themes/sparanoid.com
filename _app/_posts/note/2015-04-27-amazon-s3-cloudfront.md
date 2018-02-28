@@ -99,7 +99,7 @@ The only thing you should be aware of is that the Origin Domain Name should be p
 
 ### CloudFront + Custom SSL
 
-Update: As of Jan 21, 2016, you can now use Amazon CloudFront Integrates with AWS Certificate Manager (More like a Let's Encrypt competitor focused on AWS), which can help you issue, manage, and renew SSL/TLS certificates at no extra cost. 
+Update: As of Jan 21, 2016, you can now use Amazon CloudFront Integrates with AWS Certificate Manager (More like a Let's Encrypt competitor focused on AWS), which can help you issue, manage, and renew SSL/TLS certificates at no extra cost.
 
 Amazon has a [very detailed documentation](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html) about using HTTPS with custom SSL certificates and it's hard to get the key points. So here's a brief answer:
 
@@ -153,7 +153,7 @@ Notes:
 
 ### Update SSL Certificate
 
-If the certificate you're using is expiring, you need first upload the new certificate with a different `server-certificate-name`, change the expiring certificate to the new one, then you can optionally remove the old certificate with `aws iam delete-server-certificate`. You can also list all existing certificates via `aws iam list-server-certificate`.
+If the certificate you're using is expiring, you need first upload the new certificate with a different `server-certificate-name`, change the expiring certificate to the new one, then you can optionally remove the old certificate with `aws iam delete-server-certificate`. You can also list all existing certificates via `aws iam list-server-certificates`.
 
 [^1]: See "Determining the Size of the Public Key in an SSL Certificate" section in [Using an HTTPS Connection to Access Your Objects - Amazon CloudFront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html)
 
