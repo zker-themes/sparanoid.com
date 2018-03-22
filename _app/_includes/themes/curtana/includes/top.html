@@ -1,12 +1,20 @@
 <!doctype html>
 
+<!--
+  Apply head only for dev environment, this is required for jekyll to
+  insert livereload scripts
+-->
+{% if site.dev == true %}
+  <head>
+{% endif %}
+
 {% if site.force_utf_8 %}
   <meta charset="utf-8">
 {% endif %}
 
 <title>{{ amsf_page_title }}{{ amsf_site_title }}</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!-- Define a description for better SEO result -->
 <meta name="description" content="{{ amsf_site_desc | strip }}">
@@ -32,10 +40,11 @@
 <!-- DNS prefetching for static files -->
 {% if page.permalink == "/" %}<link rel="dns-prefetch" href="{{ site.file }}">{% endif %}
 
-<!-- browser-sync, don't remove this -->
-<!-- BS_INSERT -->
-
 <!-- Head hooks -->
 {% if page.head %}
   {{ page.head }}
+{% endif %}
+
+{% if site.dev == true %}
+  </head>
 {% endif %}
