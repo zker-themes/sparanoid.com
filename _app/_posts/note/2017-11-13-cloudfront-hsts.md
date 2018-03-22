@@ -16,7 +16,7 @@ exports.handler = (event, context, callback) => {
   const response = event.Records[0].cf.response;
   const headers = response.headers;
 
-  headers['Strict-Transport-Security'] = [{
+  headers['strict-transport-security'] = [{
     key: 'Strict-Transport-Security',   
     value: 'max-age=31536000; includeSubdomains; preload'
   }];
@@ -40,3 +40,6 @@ Age: 9128
 Cache-Control: public, max-age=1800, immutable
 ...
 ```
+
+Updated Mar 21, 2018: Now Amazon Web Services has an official documentation for this feature: [Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront
+](https://aws.amazon.com/blogs/networking-and-content-delivery/adding-http-security-headers-using-lambdaedge-and-amazon-cloudfront/).
