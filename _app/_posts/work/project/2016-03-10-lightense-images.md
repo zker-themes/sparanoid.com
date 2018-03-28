@@ -36,6 +36,8 @@ The Lightense library is wrapped in Universal Module Syntax (UMD), this means th
 
 ## Usage
 
+Configuration object:
+
 ```js
 Lightense(elements, {
   time: 300,
@@ -43,8 +45,19 @@ Lightense(elements, {
   offset: 40,
   keyboard: true,
   cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
+  background: 'rgba(255, 255, 255, .98)',
   zIndex: 2147483647
 });
+```
+
+Inline data configurations:
+
+```html
+<img src="image.png"
+  data-lightense-padding="40"
+  data-lightense-cubic-bezier="cubic-bezier(.2, 0, .1, 1)"
+  data-lightense-background="rgba(255, 255, 255, .98)"
+  data-lightense-z-index="2147483647">
 ```
 
 ## Setup
@@ -63,15 +76,15 @@ Lightense(elements, {
 ## Custom Background Color
 
 ```html
-<img src="screenshot.png" data-background="rgba(0, 0, 0, .96)">
+<img src="screenshot.png" data-lightense-background="rgba(0, 0, 0, .96)">
 ```
 
-<p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(0, 10, 45, .6)"></p>
+<p><img src="{{ site.file }}/railgun-logo.png" data-background="rgba(23, 29, 54, .8)"></p>
 
 ## Custom Padding
 
 ```html
-<img src="screenshot.png" data-padding="0">
+<img src="screenshot.png" data-lightense-padding="0">
 ```
 
 <p><img src="{{ site.file }}/delicious.com-logo.png" data-padding="0"></p>
