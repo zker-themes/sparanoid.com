@@ -157,6 +157,6 @@ Notes:
 
 If the certificate you're using is expiring, you need first upload the new certificate with a different `server-certificate-name`, change the expiring certificate to the new one, then you can optionally remove the old certificate with `aws iam delete-server-certificate`. You can also list all existing certificates via `aws iam list-server-certificates`.
 
-[^1]: See "Determining the Size of the Public Key in an SSL Certificate" section in [Using an HTTPS Connection to Access Your Objects - Amazon CloudFront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html)
+[^1]: See "Determining the Size of the Public Key in an SSL Certificate" section in [Using an HTTPS Connection to Access Your Objects - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/SecureConnections.html)
 
-[^2]: See "Encryption" in [Request and Response Behavior for Custom Origins - Amazon CloudFront](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html)
+[^2]: See "Encryption" in [Request and Response Behavior for Custom Origins - Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html)
