@@ -16,6 +16,6 @@ scheme-code: "#ffb800"
 scheme-bg-light: true
 ---
 
-This plugin magically adds an extra space between Chinese characters and English letters / numbers / common punctuation marks. A must-have plugin if you're running a Chinese blog. This plugin also works fine with multisite enabled WordPress (aka. WordPress Mu). If you love this plugin, please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
+This plugin magically adds an extra space between Chinese characters and English letters / numbers / common punctuation marks. A must-have plugin if you're running a Chinese blog. This plugin also works fine with multisite enabled WordPress (aka. WordPress Mu). If you love this plugin, please consider [buying me a cup of coffee]({{ '/donate/' | relative_url }}).
 
 <p class="download"><a href="http://wordpress.org/plugins/space-lover/">Download</a> it at WordPress.org</p>

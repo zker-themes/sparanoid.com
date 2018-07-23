@@ -23,4 +23,4 @@ scheme-list-color: "text"
 
 <p class="download"><a href="{{ site.file }}/download/VoxGrowl-1.2.dmg">VoxGrowl-1.2.dmg</a> (370 KB)</p>
 
-<p class="store">Love these styles? please consider <a href="{{ '/donate/' | prepend: site.base }}">making a donation</a></p>
+<p class="store">Love these styles? please consider <a href="{{ '/donate/' | relative_url }}">making a donation</a></p>

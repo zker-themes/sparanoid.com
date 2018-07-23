@@ -26,4 +26,4 @@ Get all stock availability for current IKEA product in your selected country.
 
 ## Love this?
 
-Please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
+Please consider [buying me a cup of coffee]({{ '/donate/' | relative_url }}).

@@ -33,4 +33,4 @@ This extension simply replace the URL you request before `onBeforeRequest` to go
 
 ## Love this?
 
-Please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
+Please consider [buying me a cup of coffee]({{ '/donate/' | relative_url }}).

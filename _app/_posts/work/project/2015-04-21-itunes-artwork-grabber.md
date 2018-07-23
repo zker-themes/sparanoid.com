@@ -52,4 +52,4 @@ Try this fancy [video demo](https://www.youtube.com/watch?v=8NVyzKb7VIY).
 
 ## Love this?
 
-Please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
+Please consider [buying me a cup of coffee]({{ '/donate/' | relative_url }}).

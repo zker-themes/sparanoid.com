@@ -12,7 +12,7 @@ permalink: /
     <h1>
       Sparanoid
       {% for post in site.categories.work limit:1 %}
-        recently made <a href="{{ post.url | prepend: site.base }}" class=latest>{{ post.title }}</a>
+        recently made <a href="{{ post.url | relative_url }}" class=latest>{{ post.title }}</a>
       {% endfor %}
     </h1>
   </header>

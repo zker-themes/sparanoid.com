@@ -114,4 +114,4 @@ All modern browsers, it "should work" in Internet Explorer 10 and up as well.
 
 ## Love this?
 
-Please consider [buying me a cup of coffee]({{ '/donate/' | prepend: site.base }}).
+Please consider [buying me a cup of coffee]({{ '/donate/' | relative_url }}).
