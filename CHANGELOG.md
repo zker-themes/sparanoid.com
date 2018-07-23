@@ -1,3 +1,30 @@
+<a name="24.3.0"></a>
+# [24.3.0](https://github.com/sparanoid/sparanoid.com/compare/v24.2.4...v24.3.0) (2018-07-23)
+
+
+### Bug Fixes
+
+* **post:** typo for “HSTS for Amazon CloudFront” ([c6dd75e](https://github.com/sparanoid/sparanoid.com/commit/c6dd75e))
+* **post:** typo in “Amazon S3 × CloudFront” ([20d6c6f](https://github.com/sparanoid/sparanoid.com/commit/20d6c6f))
+* **post:** typo in “Kai Series” ([c6bef6e](https://github.com/sparanoid/sparanoid.com/commit/c6bef6e))
+
+
+### Features
+
+* **favicon:** add border for Chrome Web App design ([76e2583](https://github.com/sparanoid/sparanoid.com/commit/76e2583))
+* **grunt:** remove deprecated `leading_quotes` support ([a0db190](https://github.com/sparanoid/sparanoid.com/commit/a0db190))
+* **home:** update copywriting ([407bb33](https://github.com/sparanoid/sparanoid.com/commit/407bb33))
+* **post:** add new comment ([3b0b50e](https://github.com/sparanoid/sparanoid.com/commit/3b0b50e))
+* **post:** add new post “HSTS for Amazon CloudFront” ([1f2a4c3](https://github.com/sparanoid/sparanoid.com/commit/1f2a4c3))
+* **post:** add notes for “Amazon S3 × CloudFront” ([a43c38d](https://github.com/sparanoid/sparanoid.com/commit/a43c38d))
+* **post:** fix links for “Amazon S3 × CloudFront” ([f4a2a8e](https://github.com/sparanoid/sparanoid.com/commit/f4a2a8e))
+* **post:** update plugin status for post “Slimpack” ([db87d41](https://github.com/sparanoid/sparanoid.com/commit/db87d41))
+* **post:** update readme for “Lightense Images” ([a42fa7d](https://github.com/sparanoid/sparanoid.com/commit/a42fa7d))
+* **post:** use markdown format ([30ff461](https://github.com/sparanoid/sparanoid.com/commit/30ff461))
+* larger favicon ([1548dc9](https://github.com/sparanoid/sparanoid.com/commit/1548dc9))
+
+
+
 <a name="24.2.4"></a>
 ## [24.2.4](https://github.com/sparanoid/sparanoid.com/compare/v24.2.3...v24.2.4) (2017-01-19)
 
