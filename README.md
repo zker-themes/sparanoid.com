@@ -20,12 +20,12 @@ $ bundle install && npm install && grunt serve
 
 ## Licenses
 
-Following files, directories and their contents are copyright Tunghsiao Liu and licensed under a [CC BY-NC-ND 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/). You may not reuse anything therein without permission:
+Following files, directories and their contents are copyright Tunghsiao Liu and licensed under a [CC BY-NC-ND 3.0](https://creativecommons.org/licenses/by-nc-nd/3.0/). You may not reuse anything therein without permission:
 
 - `./_app/_posts/`
 - `./_app/apple-touch-icon.png`
 - `./_app/favicon.*`
 
-All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
+All other files and directories are licensed under the [MIT](https://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
 
 © Sparanoid, Inc., Rights reserved as indicated above.
