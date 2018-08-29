@@ -4,7 +4,7 @@ title: URL-Based CSP for AWS Lambda
 category: note
 ---
 
-If you followed my [last post](/note/playing-with-ocsp-stapling/) you would know you can set HSTS headers via AWS Lambda, this time let me show you how to add Content Security Policy (CSP), Expect-CT, and other security headers based on URLs that clients request, and only for `text/html` content type.
+If you followed my [last post](/note/cloudfront-hsts/) you would know you can set HSTS headers via AWS Lambda, this time let me show you how to add Content Security Policy (CSP), Expect-CT, and other security headers based on URLs that clients request, and only for `text/html` content type.
 
 I'll modify the production code built from my last post. This time you need to catch the request URL:
 
