@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTTP/2 and ECDSA Cipher Suites
+title: HTTP<span class="of-case">/</>2 and ECDSA Cipher Suites
 category: note
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Amazon S3 × CloudFront
+title: Amazon S3 <span class="of-case">×</span> CloudFront
 category: note
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lucky Star for QQ / Sogou Pinyin
+title: Lucky Star for QQ <span class="of-case">/</span> Sogou Pinyin
 category: work
 tag: project
 scheme-text: "#ffcddb"

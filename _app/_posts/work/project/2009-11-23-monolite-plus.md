@@ -1,6 +1,6 @@
 ---
 layout: post
-title: foobar2000 - MonoLite Plus
+title: foobar2000 <span class="of-case">-</span> MonoLite Plus
 category: work
 tag: project
 excerpt: A foobar2000 theme based on Columns UI

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: URL-Based CSP for AWS Lambda
+title: URL<span class="of-case">-</span>Based CSP for AWS Lambda
 category: note
 ---
 

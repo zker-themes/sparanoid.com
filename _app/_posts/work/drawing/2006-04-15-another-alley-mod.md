@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Another Alley [Mod]
+title: Another Alley <span class="of-case">[</span>Mod<span class="of-case">]</span>
 category: work
 tag: drawing
 excerpt: Another Alley [Mod]
