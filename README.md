@@ -28,4 +28,4 @@ Following files, directories and their contents are copyright Tunghsiao Liu and 
 
 All other files and directories are licensed under the [MIT](https://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
 
-© Sparanoid, Inc., Rights reserved as indicated above.
+© Sparanoid, Inc., rights reserved as indicated above.
