@@ -10,9 +10,9 @@ Chinese copywriting guidelines for better written communication.
 [Other languages available](https://github.com/sparanoid/chinese-copywriting-guidelines).
 
 ## Table of Contents
-
 {:.no_toc}
-* Will be replaced with the ToC
+
+* TOC
 {:toc}
 
 ## Spacing
