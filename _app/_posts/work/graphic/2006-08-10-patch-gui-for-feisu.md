@@ -12,4 +12,4 @@ scheme-hero-text: "#ff8b2e"
 
 Patch GUI for Feisu. by Photoshop and Painter, Feisu is also a student just a little older than me.
 
-<p><img src="{{ site.file }}/work/patch_gui_for_feisu.png" class="size-small" alt="Patch GUI for Feisu" data-lightense-background="#510e00"></p>
+<p><img src="{{ site.file }}/work/patch_gui_for_feisu.png" class="no-resize" alt="Patch GUI for Feisu" data-lightense-background="#510e00"></p>
